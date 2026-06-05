@@ -1,25 +1,16 @@
-const tabs = document.querySelectorAll(".tab");
-const panels = document.querySelectorAll(".panel");
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    panels.forEach(p => p.classList.remove("active"));
-
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.tab).classList.add("active");
-  });
+document.querySelectorAll('.tab').forEach(b=>{
+ b.onclick=()=>{
+ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+ document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+ b.classList.add('active');
+ document.getElementById(b.dataset.tab).classList.add('active');
+ }
 });
-
-const caseTabs = document.querySelectorAll(".case");
-const casePanels = document.querySelectorAll(".case-panel");
-
-caseTabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    caseTabs.forEach(t => t.classList.remove("active"));
-    casePanels.forEach(p => p.classList.remove("active"));
-
-    tab.classList.add("active");
-    document.getElementById("case-" + tab.dataset.case).classList.add("active");
-  });
-});
+const cases={
+supplier:'IAM=ALLOW | Fraud=ALLOW | DECIMAG=ESCALATE (Missing Structural Continuity)',
+bit:'User thinks Receive Money. System sees Send Money. DECIMAG=REQUEST_INFO',
+agent:'Permission Exists. Action Irreversible. DECIMAG=ESCALATE/DENY'
+};
+function showCase(c){document.getElementById('casebox').innerHTML=cases[c];}
+showCase('supplier');
