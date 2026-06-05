@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECIMAG — Execution Legitimacy Infrastructure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">DECIMAG</div>
+    <nav>
+      <button class="tab active" data-tab="problem">Problem</button>
+      <button class="tab" data-tab="right">Right-to-Act</button>
+      <button class="tab" data-tab="space">Boundary Spaces</button>
+      <button class="tab" data-tab="cases">Use Cases</button>
+      <button class="tab" data-tab="security">Beyond Security</button>
+      <button class="tab" data-tab="research">Research</button>
+      <button class="tab" data-tab="contact">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="problem" class="panel active">
+      <div class="hero">
+        <p class="eyebrow">Execution Legitimacy Infrastructure</p>
+        <h1>A missing layer between authorization and execution.</h1>
+        <p class="lead">
+          Most systems verify whether an action can be performed.
+          DECIMAG evaluates whether it should be performed.
+        </p>
+        <div class="flow">
+          <span>Authentication</span>
+          <span>Authorization</span>
+          <span class="highlight">Execution Legitimacy</span>
+          <span>Execution</span>
+        </div>
+        <p class="note">
+          A successful login does not prove a legitimate action.
+          A valid permission does not prove a legitimate action.
+        </p>
+      </div>
+    </section>
+
+    <section id="right" class="panel">
+      <h2>Right-to-Act</h2>
+      <p>
+        Right-to-Act is a pre-execution decision model. It asks whether enough
+        legitimacy exists for an action to proceed before real-world consequences occur.
+      </p>
+      <div class="compare">
+        <div>
+          <h3>Can Act</h3>
+          <p>Identity passed. Permission exists. The system can execute.</p>
+        </div>
+        <div>
+          <h3>Should Act</h3>
+          <p>Purpose, scope, authority, consequence and reversibility are evaluated before execution.</p>
+        </div>
+      </div>
+      <div class="outcomes">
+        <span>ALLOW</span>
+        <span>REQUEST_INFO</span>
+        <span>ESCALATE</span>
+        <span>DENY</span>
+      </div>
+    </section>
+
+    <section id="space" class="panel">
+      <h2>Boundary Spaces</h2>
+      <p>
+        An action may be legitimate in one organizational space and illegitimate in another.
+        DECIMAG is designed to reason across local and global contexts.
+      </p>
+      <div class="space-grid">
+        <div class="card">
+          <h3>Local Branch</h3>
+          <p>One payment request looks normal.</p>
+          <strong>ALLOW</strong>
+        </div>
+        <div class="card">
+          <h3>Headquarters</h3>
+          <p>Seventeen similar requests across six branches form a pattern.</p>
+          <strong>ESCALATE</strong>
+        </div>
+      </div>
+      <p class="note">The local system sees an event. The infrastructure sees a structural pattern.</p>
+    </section>
+
+    <section id="cases" class="panel">
+      <h2>Use Cases</h2>
+      <div class="case-tabs">
+        <button class="case active" data-case="bit">BIT / Payment Request Scam</button>
+        <button class="case" data-case="supplier">Supplier Bank Change</button>
+        <button class="case" data-case="agent">AI Agent Action</button>
+        <button class="case" data-case="data">Sensitive Data Access</button>
+        <button class="case" data-case="gdpr">Regulatory Execution</button>
+      </div>
+
+      <div class="case-panel active" id="case-bit">
+        <h3>BIT / Payment Request Scam</h3>
+        <p>User believes they are receiving money, but actually approves a payment request.</p>
+        <div class="mini-flow">
+          <span>Authenticated ✓</span><span>Action Approved ✓</span><span class="bad">Intent ≠ Execution</span><span class="highlight">REQUEST_INFO</span>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case-supplier">
+        <h3>Supplier Bank Change</h3>
+        <p>A supplier asks to change bank details. The workflow passes, but structural continuity is missing.</p>
+        <div class="mini-flow">
+          <span>Authorized ✓</span><span>Workflow Passed ✓</span><span class="bad">Continuity Missing</span><span class="highlight">ESCALATE</span>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case-agent">
+        <h3>AI Agent Action</h3>
+        <p>An agent has permission to delete records, but the action is irreversible and insufficiently justified.</p>
+        <div class="mini-flow">
+          <span>Permission ✓</span><span>Tool Access ✓</span><span class="bad">Irreversible</span><span class="highlight">DENY / ESCALATE</span>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case-data">
+        <h3>Sensitive Data Access</h3>
+        <p>Data is reachable, but there may be no legitimate reason for the actor to access it.</p>
+        <div class="mini-flow">
+          <span>Resource Reachable ✓</span><span>Access Possible ✓</span><span class="bad">Purpose Missing</span><span class="highlight">ESCALATE</span>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case-gdpr">
+        <h3>Regulatory Execution</h3>
+        <p>GDPR defines obligations. The missing layer is the execution mechanism that checks them before action.</p>
+        <div class="mini-flow">
+          <span>Data Accessible ✓</span><span>Model Recommends ✓</span><span class="bad">Consent / Purpose?</span><span class="highlight">REQUEST_INFO</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="panel">
+      <h2>Beyond Security</h2>
+      <p>
+        Security asks whether the action can happen. DECIMAG asks whether the action has the right to happen.
+      </p>
+      <div class="compare">
+        <div>
+          <h3>Traditional Security</h3>
+          <p>Prevent. Detect. Respond.</p>
+        </div>
+        <div>
+          <h3>Execution Legitimacy</h3>
+          <p>Even if the actor is inside, should this action still be allowed?</p>
+        </div>
+      </div>
+      <p class="note">
+        Access ≠ Legitimacy. Ability ≠ Right. Authorization ≠ Justification.
+      </p>
+    </section>
+
+    <section id="research" class="panel">
+      <h2>Research</h2>
+      <p>
+        DECIMAG is based on ongoing research into Right-to-Act, pre-execution decision governance,
+        and the structural conditions required for legitimate autonomous action.
+      </p>
+      <div class="links">
+        <a href="#" target="_blank">Right-to-Act Paper</a>
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Future BAR Research</a>
+      </div>
+      <p class="note">Replace these links with the real arXiv and LinkedIn URLs before publishing.</p>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <p>
+        For research, pilots, partnerships, or discussion around execution legitimacy in AI agents and autonomous systems:
+      </p>
+      <div class="contact-box">
+        <p><strong>Gadi Lavi</strong></p>
+        <p><a href="mailto:lavi.gadi@gmail.com">lavi.gadi@gmail.com</a></p>
+        <p><a href="#" target="_blank">LinkedIn profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="status">
+    <span>Can Act ✓</span>
+    <span>Should Act ?</span>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
