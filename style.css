@@ -293,3 +293,286 @@ footer {
   color: var(--muted);
   line-height: 1.6;
 }
+
+
+
+/* Mobile Responsive Pass v2.4 */
+@media (max-width: 760px) {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(59, 130, 246, 0.14), transparent 18rem),
+      linear-gradient(180deg, #162238 0%, #111c2f 100%);
+  }
+
+  .site-header {
+    position: relative;
+    min-height: auto;
+    padding: 28px 24px 24px;
+    align-items: flex-start;
+    gap: 22px;
+    flex-direction: column;
+  }
+
+  .brand {
+    font-size: 22px;
+    letter-spacing: 0.24em;
+  }
+
+  nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+    font-size: 18px;
+  }
+
+  nav a {
+    line-height: 1.2;
+  }
+
+  .nav-cta {
+    grid-column: 1 / -1;
+    width: fit-content;
+    padding: 13px 22px;
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 64px 22px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 54px;
+    padding-bottom: 72px;
+  }
+
+  .hero-stack {
+    width: 100%;
+  }
+
+  .hero-number {
+    font-size: clamp(58px, 20vw, 92px);
+    letter-spacing: -0.06em;
+  }
+
+  .hero p {
+    font-size: 17px;
+    margin: 14px 0 22px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 11vw, 54px);
+    line-height: 1.08;
+    margin: 22px auto;
+  }
+
+  .hero h2 {
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.12;
+    margin: 22px 0;
+  }
+
+  .arrow {
+    font-size: 30px;
+    margin: 14px 0;
+  }
+
+  .verify-block {
+    padding: 22px 18px;
+    border-radius: 26px;
+    gap: 8px;
+    margin: 20px auto;
+  }
+
+  .verify-block span {
+    font-size: 17px;
+  }
+
+  .verify-block strong {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .rta-mark {
+    font-size: clamp(72px, 24vw, 118px);
+  }
+
+  .rta-subtitle {
+    font-size: clamp(20px, 7vw, 32px);
+    letter-spacing: 0.10em;
+  }
+
+  .section-title {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(36px, 10vw, 48px);
+    line-height: 1.05;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .case-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .case-card h3 {
+    margin-bottom: 20px;
+  }
+
+  .case-card p {
+    font-size: 16px;
+  }
+
+  .rta-step {
+    font-size: 24px;
+    margin: 8px 0;
+  }
+
+  .rta-evaluation {
+    font-size: 15px;
+  }
+
+  .protocol-layout,
+  .console-top,
+  .console-body,
+  .console-notes,
+  .case-study-layout,
+  .research-columns,
+  .questions {
+    grid-template-columns: 1fr;
+  }
+
+  .protocol-flow,
+  .console-frame,
+  .research-card,
+  .contact-card,
+  .story,
+  .evaluation {
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .protocol-copy {
+    order: -1;
+  }
+
+  .protocol-copy h3 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .protocol-copy p {
+    font-size: 17px;
+  }
+
+  .impact-list,
+  .decision-row {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-list span,
+  .decision-row span {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .rta-small {
+    font-size: 54px;
+  }
+
+  .console-top {
+    gap: 20px;
+  }
+
+  .console-top strong {
+    font-size: 21px;
+  }
+
+  .metric strong {
+    font-size: 42px;
+  }
+
+  .console-notes {
+    gap: 14px;
+  }
+
+  .story h2 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .story p,
+  .evaluation li {
+    font-size: 16px;
+  }
+
+  .research-card h3 {
+    font-size: 38px;
+  }
+
+  .research-card > p {
+    font-size: 17px;
+  }
+
+  .research-note {
+    font-size: 16px;
+  }
+
+  .questions p {
+    font-size: 15px;
+  }
+
+  .contact-card h3 {
+    font-size: 36px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 15px 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px 22px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 24px;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  nav {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .verify-block strong {
+    font-size: 30px;
+  }
+}

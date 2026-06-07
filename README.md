@@ -1,20 +1,16 @@
-# DECIMAG Website V2.1 Functional
+# DECIMAG Website V2.3 Direct Research Links
 
-Upload these files to GitHub:
+Upload:
 - index.html
 - style.css
 - script.js
 
-Fixes:
-- The Problem cards now include RTA Evaluation arrows.
-- Contact form validates fields and email.
-- Contact form sends to lavi.gadi@gmail.com through FormSubmit.
-- Form displays success/error messages.
-- Research section includes arXiv links.
-
-Important:
-FormSubmit requires first-time activation. After uploading, send one test message and approve the confirmation email sent to lavi.gadi@gmail.com.
+Fix:
+- Research page now uses direct article links, including Harvard ADS / NASA ADS exact abstract URL.
 
 
-V2.2 update:
-- Added exact Research page links for Semantic Scholar, Harvard ADS / NASA ADS, Connected Papers and CatalyzeX.
+V2.4 update:
+- Mobile responsive pass.
+- Improved hero spacing on phones.
+- Single-column mobile cards and sections.
+- Mobile-friendly navigation and form.
