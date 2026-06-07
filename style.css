@@ -635,3 +635,18 @@ textarea:focus {
     padding: 72px 20px;
   }
 }
+
+/* V2 functional additions */
+.case-card { min-height: 365px; }
+.rta-step { text-align: center; color: var(--blue) !important; font-size: 24px; font-weight: 800; margin: 10px 0; }
+.rta-evaluation { text-align: center; color: var(--blue) !important; font-weight: 900; letter-spacing: 0.04em; margin: 4px 0; }
+a { color: #93c5fd; text-decoration: none; }
+a:hover { color: var(--text); text-decoration: underline; }
+label span { display: block; font-size: 13px; color: var(--muted); margin: 0 0 7px 4px; }
+input:focus, textarea:focus { outline: none; border-color: rgba(59, 130, 246, 0.85); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.16); }
+input.invalid, textarea.invalid { border-color: rgba(239, 68, 68, 0.85); }
+button:disabled { opacity: 0.65; cursor: not-allowed; }
+.form-status { margin: 0; min-height: 24px; color: var(--muted); font-weight: 700; }
+.form-status.success { color: var(--green); }
+.form-status.error { color: var(--red); }
+.honeypot { display: none !important; }
