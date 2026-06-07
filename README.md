@@ -1,27 +1,14 @@
-# Right-to-Act by DECIMAG — Static Website V2
+# DECIMAG Website V1
 
-This is a simple static website for GitHub Pages.
+Static website V1 for DECIMAG / RTA — RIGHT TO ACT.
 
 ## Files
-
 - index.html
 - style.css
-- script.js
 
-## How to publish on GitHub Pages
+## How to use
+Upload both files to GitHub Pages, Netlify, Vercel, or any static hosting provider.
 
-1. Create a new GitHub repository.
-2. Upload `index.html`, `style.css`, and `script.js` to the repository root.
-3. Go to Settings -> Pages.
-4. Under Build and deployment, choose:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /root
-5. Click Save.
-6. Wait 1-3 minutes for the GitHub Pages URL.
-
-## Before publishing
-
-Replace placeholder links in the Research and Contact tabs:
-- Right-to-Act Paper
-- LinkedIn profile
+## Notes
+This is a V1 visual website based on the agreed structure:
+Home, The Problem, The Protocol, Runtime Console, Case Study, Research, Contact.

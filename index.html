@@ -1,69 +1,288 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Right-to-Act | DECIMAG V3</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DECIMAG | RTA Protocol</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<h1>Right-to-Act</h1>
-<p class="sub">Execution Legitimacy Infrastructure</p>
-<nav>
-<button class="tab active" data-tab="home">Why This Matters</button>
-<button class="tab" data-tab="compare">Why Existing Systems Miss It</button>
-<button class="tab" data-tab="cases">Interactive Use Cases</button>
-<button class="tab" data-tab="space">Local vs Global</button>
-<button class="tab" data-tab="research">Research</button>
-</nav>
-</header>
+  <header class="site-header">
+    <div class="brand">DECIMAG</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#problem">The Problem</a>
+      <a href="#protocol">The Protocol</a>
+      <a href="#runtime">Runtime Console</a>
+      <a href="#case-study">Case Study</a>
+      <a href="#research">Research</a>
+      <a href="#contact" class="nav-cta">Request Demo</a>
+    </nav>
+  </header>
 
-<section id="home" class="panel active">
-<h2>Who decides whether an AI system should act?</h2>
-<p>AI systems are becoming increasingly capable of acting. The question is no longer whether they can act. The question is whether they should.</p>
-<div class="flow">
-<div>Authentication</div><div>Authorization</div><div class="hl">Execution Legitimacy</div><div>Execution</div>
-</div>
-</section>
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-stack">
+        <div class="hero-number">$10T</div>
+        <p>Estimated Annual Cybercrime Damage</p>
+        <div class="arrow">↓</div>
 
-<section id="compare" class="panel">
-<h2>Why Existing Systems Miss It</h2>
-<table>
-<tr><th>System</th><th>Question</th></tr>
-<tr><td>IAM</td><td>Can access?</td></tr>
-<tr><td>Security</td><td>Is it safe?</td></tr>
-<tr><td>Fraud</td><td>Is it suspicious?</td></tr>
-<tr><td>Compliance</td><td>Is it allowed?</td></tr>
-<tr><td><b>DECIMAG</b></td><td><b>Should it execute?</b></td></tr>
-</table>
-</section>
+        <h1>AI Agents Can Now Execute Real Actions</h1>
+        <div class="arrow">↓</div>
 
-<section id="cases" class="panel">
-<h2>Interactive Use Cases</h2>
-<button onclick="showCase('supplier')">Supplier Change</button>
-<button onclick="showCase('bit')">BIT Fraud</button>
-<button onclick="showCase('agent')">AI Agent</button>
-<div id="casebox"></div>
-</section>
+        <div class="verify-block">
+          <span>Existing Systems Verify</span>
+          <strong>Identity</strong>
+          <strong>Access</strong>
+          <strong>Policy</strong>
+        </div>
+        <div class="arrow">↓</div>
 
-<section id="space" class="panel">
-<h2>Local vs Global</h2>
-<p>Branch A: ALLOW<br>Branch B: ALLOW<br>Branch C: ALLOW<br>Branch D: ALLOW</p>
-<h3>Global Pattern Detected → ESCALATE</h3>
-<p>The local system sees an event. The infrastructure sees a pattern.</p>
-</section>
+        <h2>But Not The Action Itself</h2>
+        <div class="arrow">↓</div>
 
-<section id="research" class="panel">
-<h2>Research</h2>
-<ul>
-<li>Published: Right-to-Act</li>
-<li>Current: Execution Legitimacy & AI Agents</li>
-<li>Future: Boundary Spaces & Organizational Structure Discovery</li>
-</ul>
-</section>
+        <div class="rta-mark">RTA</div>
+        <div class="rta-subtitle">RIGHT TO ACT</div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section id="problem" class="section">
+      <div class="section-title">
+        <span>01</span>
+        <h2>The Problem</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="case-card">
+          <h3>Bank Fraud</h3>
+          <p>A supplier changed the beneficiary bank account.</p>
+          <p>The account passed all verification checks.</p>
+          <p class="result">The payment was never sent.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Data Export</h3>
+          <p>An employee requested to export customer records.</p>
+          <p>The request was approved.</p>
+          <p class="result">Customer data remained untouched.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>AI Agents</h3>
+          <p>An AI agent attempted to delete a production database.</p>
+          <p>The action matched its assigned permissions.</p>
+          <p class="result">The database remained intact.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Money Transfer</h3>
+          <p>A customer approved a payment request.</p>
+          <p>The transaction appeared legitimate.</p>
+          <p class="result">The money was never transferred.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="protocol" class="section">
+      <div class="section-title">
+        <span>02</span>
+        <h2>The Protocol</h2>
+      </div>
+
+      <div class="protocol-layout">
+        <div class="protocol-flow">
+          <div class="flow-box">Requested Action</div>
+          <div class="arrow">↓</div>
+          <div class="flow-box highlight">Consequence Evaluation</div>
+
+          <div class="impact-list">
+            <span>Customer Impact</span>
+            <span>Financial Impact</span>
+            <span>Operational Impact</span>
+            <span>Security Impact</span>
+            <span>Regulatory Impact</span>
+          </div>
+
+          <div class="arrow">↓</div>
+          <div class="rta-small">RTA<br /><span>RIGHT TO ACT</span></div>
+          <div class="arrow">↓</div>
+
+          <div class="decision-row">
+            <span class="allow">ALLOW</span>
+            <span class="info">REQUEST INFO</span>
+            <span class="escalate">ESCALATE</span>
+            <span class="deny">DENY</span>
+          </div>
+        </div>
+
+        <div class="protocol-copy">
+          <h3>Every action creates consequences.</h3>
+          <p>Those consequences should be evaluated before execution.</p>
+          <p class="short-explain">
+            RTA evaluates the potential consequences of an action using existing information,
+            organizational context, and expected impact before execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="runtime" class="section">
+      <div class="section-title">
+        <span>03</span>
+        <h2>Runtime Console</h2>
+      </div>
+
+      <div class="console-frame">
+        <div class="console-top">
+          <div>
+            <span class="label">Action</span>
+            <strong>Change Supplier Bank Account</strong>
+          </div>
+          <div>
+            <span class="label">Outcome</span>
+            <strong class="escalate-text">ESCALATE</strong>
+          </div>
+          <div>
+            <span class="label">Execution Status</span>
+            <strong>Payment Held</strong>
+          </div>
+        </div>
+
+        <div class="console-body">
+          <div class="metric">
+            <span>Legitimacy Gap</span>
+            <strong>4</strong>
+          </div>
+          <div class="metric">
+            <span>Affected Conditions</span>
+            <strong>3</strong>
+          </div>
+          <div class="metric">
+            <span>Missing Information</span>
+            <strong>2</strong>
+          </div>
+        </div>
+
+        <div class="console-notes">
+          <div>
+            <h3>Dynamic Evaluation</h3>
+            <p>RTA evaluates actions within their operational context rather than using fixed rules.</p>
+          </div>
+          <div>
+            <h3>Local & Global Context</h3>
+            <p>The same action may be legitimate in one environment and require review in another.</p>
+          </div>
+          <div>
+            <h3>Adaptive Calibration</h3>
+            <p>The protocol adjusts to organizational conditions while preserving decision consistency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-study" class="section">
+      <div class="section-title">
+        <span>04</span>
+        <h2>Case Study</h2>
+      </div>
+
+      <div class="case-study-layout">
+        <div class="story">
+          <h3>International Business Email Fraud</h3>
+          <h2>$415,017.58 Supplier Payment</h2>
+
+          <p>Shivganga Drillers, an industrial company based in Indore, India, was preparing a payment of <strong>$415,017.58</strong> to Innovex International Inc, a vendor in Houston.</p>
+          <p>Cybercriminals spoofed the vendor’s email, changed the banking details, and redirected the payment to a fraudulent JP Morgan Bank account in the United States.</p>
+          <p>The fraud was discovered after another spoofed email claimed the payment had been rejected and requested a new transfer. The company verified directly with the vendor and alerted the cyber cell.</p>
+          <p>The funds were eventually recovered after emergency coordination between Indian cyber authorities, IC3, JP Morgan Bank and Bank of India.</p>
+        </div>
+
+        <div class="evaluation">
+          <h3>What Existing Systems Saw</h3>
+          <ul>
+            <li>Legitimate Business Communication</li>
+            <li>Known Supplier Relationship</li>
+            <li>Approved Internal Process</li>
+            <li>Authorized Payment Request</li>
+            <li>No Technical Access Violation</li>
+          </ul>
+
+          <h3>What RTA Evaluates</h3>
+          <div class="mini-flow">
+            <span>Requested Action</span>
+            <span>Existing Information</span>
+            <span>Organizational Context</span>
+            <span>Potential Consequences</span>
+            <span>Expected Impact</span>
+            <strong>RIGHT TO ACT</strong>
+          </div>
+
+          <div class="outcome-box">
+            <span>Outcome</span>
+            <strong>ESCALATE</strong>
+            <p>The payment was never sent to the fraudulent account.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-title">
+        <span>05</span>
+        <h2>Research</h2>
+      </div>
+
+      <div class="research-card">
+        <h3>Right To Act</h3>
+        <p>A Pre-Execution Non-Compensatory Decision Protocol for AI Systems</p>
+
+        <div class="research-columns">
+          <div>
+            <h4>Primary Publication</h4>
+            <p>arXiv</p>
+          </div>
+          <div>
+            <h4>Indexed & Referenced By</h4>
+            <p>NASA ADS · Semantic Scholar · Connected Papers · scite.ai · CatalyzeX · arXivLens · RichlyAI · Provide.ai · Robotics & AI Research Directories</p>
+          </div>
+          <div>
+            <h4>Research Areas</h4>
+            <p>AI Safety · Autonomous Systems · Agent Governance · Decision Authorization · Pre-Execution Validation</p>
+          </div>
+        </div>
+
+        <div class="questions">
+          <p>Can a system evaluate an action before executing it?</p>
+          <p>Can non-action be a valid outcome?</p>
+          <p>Can actions be evaluated through consequences before execution?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-title">
+        <span>06</span>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-card">
+        <h3>Request a Demo</h3>
+        <p>Pilot Program · Research Collaboration · Partnership Opportunities</p>
+
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Organization" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button type="button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>DECIMAG</span>
+    <span>RTA — RIGHT TO ACT</span>
+  </footer>
 </body>
 </html>
