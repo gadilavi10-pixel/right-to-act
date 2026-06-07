@@ -1315,3 +1315,176 @@ section {
     display: block;
   }
 }
+
+
+
+/* Anchor + Mobile Density Fix v2.8 */
+
+/* Desktop: clicking menu should land closer to the section title */
+@media (min-width: 761px) {
+  section {
+    scroll-margin-top: 54px;
+  }
+
+  .section {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .hero {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Mobile: tighter pages so each section feels intentional, not oversized */
+@media (max-width: 760px) {
+  section {
+    scroll-margin-top: 78px;
+  }
+
+  .section {
+    padding-top: 42px;
+    padding-bottom: 48px;
+  }
+
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 44px;
+  }
+
+  .site-header {
+    padding: 16px 18px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 31px;
+  }
+
+  .section-title span {
+    font-size: 12px;
+    padding: 5px 9px;
+  }
+
+  .mobile-hero-story h1 {
+    font-size: 31px;
+  }
+
+  .mobile-hero-story h2 {
+    font-size: 25px;
+  }
+
+  .mobile-stat {
+    font-size: 52px;
+  }
+
+  .mobile-rta {
+    font-size: 58px;
+  }
+
+  .mobile-rta-sub {
+    font-size: 18px;
+  }
+
+  .mobile-pill-row span {
+    font-size: 20px;
+    padding: 11px 13px;
+  }
+
+  .story-step,
+  .mobile-protocol-story,
+  .mobile-runtime-story p,
+  .mobile-research-story,
+  .contact-card,
+  .story,
+  .evaluation {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .mobile-research-story h3 {
+    font-size: 30px;
+  }
+
+  .mobile-research-story p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .mobile-research-story a {
+    padding: 10px 12px;
+    margin: 7px 0;
+    font-size: 15px;
+  }
+
+  .contact-section {
+    padding-top: 34px;
+    padding-bottom: 120px;
+  }
+
+  .contact-card {
+    margin-bottom: 40px;
+  }
+
+  .contact-card h3 {
+    font-size: 29px;
+    margin-bottom: 8px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  form {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  label span {
+    display: none;
+  }
+
+  input,
+  textarea {
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+
+  textarea {
+    min-height: 105px;
+  }
+
+  button {
+    padding: 13px 16px;
+  }
+
+  .direct-email,
+  .form-status {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  .section {
+    padding-top: 36px;
+    padding-bottom: 42px;
+  }
+
+  .section-title h2 {
+    font-size: 29px;
+  }
+
+  .mobile-hero-story h1 {
+    font-size: 29px;
+  }
+
+  .contact-section {
+    padding-bottom: 150px;
+  }
+}

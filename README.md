@@ -1,12 +1,13 @@
-# DECIMAG Website V2.7 Mobile Story Mode
+# DECIMAG Website V2.8 Anchor + Mobile Density
 
 Upload:
 - index.html
 - style.css
 - script.js
 
-Mobile change:
-- Desktop remains card/console layout.
-- Mobile switches to Story Mode.
-- Home, Problem, Protocol, Runtime and Research use compact mobile-only layouts.
-- Contact remains functional.
+Fixes:
+- Desktop menu links land closer to section headers
+- Mobile sections are denser and less oversized
+- Mobile Research and Contact are more compact
+- Contact form fits better on phone screens
+- Desktop structure preserved
