@@ -1,16 +1,16 @@
-# DECIMAG Website V2.3 Direct Research Links
+# DECIMAG Website V2.5 Mobile Real
 
 Upload:
 - index.html
 - style.css
 - script.js
 
-Fix:
-- Research page now uses direct article links, including Harvard ADS / NASA ADS exact abstract URL.
+Mobile fixes:
+- Real mobile menu using a Menu button
+- Compact hero section
+- Smaller mobile typography
+- One-column mobile layouts
+- Compact protocol and case-study sections
+- Mobile-friendly form
 
-
-V2.4 update:
-- Mobile responsive pass.
-- Improved hero spacing on phones.
-- Single-column mobile cards and sections.
-- Mobile-friendly navigation and form.
+Desktop layout remains unchanged.
