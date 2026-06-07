@@ -30,7 +30,9 @@
         <div class="arrow">↓</div>
         <div class="verify-block">
           <span>Existing Systems Verify</span>
-          <strong>Identity</strong><strong>Access</strong><strong>Policy</strong>
+          <strong>Identity</strong>
+          <strong>Access</strong>
+          <strong>Policy</strong>
         </div>
         <div class="arrow">↓</div>
         <h2>But Not The Action Itself</h2>
@@ -41,65 +43,267 @@
     </section>
 
     <section id="problem" class="section">
-      <div class="section-title"><span>01</span><h2>The Problem</h2></div>
+      <div class="section-title">
+        <span>01</span>
+        <h2>The Problem</h2>
+      </div>
+
       <div class="card-grid">
-        <article class="case-card"><h3>Bank Fraud</h3><p>A supplier changed the beneficiary bank account.</p><p>The account passed all verification checks.</p><p class="rta-step">↓</p><p class="rta-evaluation">RTA Evaluation</p><p class="rta-step">↓</p><p class="result">The payment was never sent.</p></article>
-        <article class="case-card"><h3>Data Export</h3><p>An employee requested to export customer records.</p><p>The request was approved.</p><p class="rta-step">↓</p><p class="rta-evaluation">RTA Evaluation</p><p class="rta-step">↓</p><p class="result">Customer data remained untouched.</p></article>
-        <article class="case-card"><h3>AI Agents</h3><p>An AI agent attempted to delete a production database.</p><p>The action matched its assigned permissions.</p><p class="rta-step">↓</p><p class="rta-evaluation">RTA Evaluation</p><p class="rta-step">↓</p><p class="result">The database remained intact.</p></article>
-        <article class="case-card"><h3>Money Transfer</h3><p>A customer approved a payment request.</p><p>The transaction appeared legitimate.</p><p class="rta-step">↓</p><p class="rta-evaluation">RTA Evaluation</p><p class="rta-step">↓</p><p class="result">The money was never transferred.</p></article>
+        <article class="case-card">
+          <h3>Bank Fraud</h3>
+          <p>A supplier changed the beneficiary bank account.</p>
+          <p>The account passed all verification checks.</p>
+          <p class="rta-step">↓</p>
+          <p class="rta-evaluation">RTA Evaluation</p>
+          <p class="rta-step">↓</p>
+          <p class="result">The payment was never sent.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Data Export</h3>
+          <p>An employee requested to export customer records.</p>
+          <p>The request was approved.</p>
+          <p class="rta-step">↓</p>
+          <p class="rta-evaluation">RTA Evaluation</p>
+          <p class="rta-step">↓</p>
+          <p class="result">Customer data remained untouched.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>AI Agents</h3>
+          <p>An AI agent attempted to delete a production database.</p>
+          <p>The action matched its assigned permissions.</p>
+          <p class="rta-step">↓</p>
+          <p class="rta-evaluation">RTA Evaluation</p>
+          <p class="rta-step">↓</p>
+          <p class="result">The database remained intact.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Money Transfer</h3>
+          <p>A customer approved a payment request.</p>
+          <p>The transaction appeared legitimate.</p>
+          <p class="rta-step">↓</p>
+          <p class="rta-evaluation">RTA Evaluation</p>
+          <p class="rta-step">↓</p>
+          <p class="result">The money was never transferred.</p>
+        </article>
       </div>
     </section>
 
     <section id="protocol" class="section">
-      <div class="section-title"><span>02</span><h2>The Protocol</h2></div>
+      <div class="section-title">
+        <span>02</span>
+        <h2>The Protocol</h2>
+      </div>
+
       <div class="protocol-layout">
         <div class="protocol-flow">
-          <div class="flow-box">Requested Action</div><div class="arrow">↓</div><div class="flow-box highlight">Consequence Evaluation</div>
-          <div class="impact-list"><span>Customer Impact</span><span>Financial Impact</span><span>Operational Impact</span><span>Security Impact</span><span>Regulatory Impact</span></div>
-          <div class="arrow">↓</div><div class="rta-small">RTA<br><span>RIGHT TO ACT</span></div><div class="arrow">↓</div>
-          <div class="decision-row"><span class="allow">ALLOW</span><span class="info">REQUEST INFO</span><span class="escalate">ESCALATE</span><span class="deny">DENY</span></div>
+          <div class="flow-box">Requested Action</div>
+          <div class="arrow">↓</div>
+          <div class="flow-box highlight">Consequence Evaluation</div>
+          <div class="impact-list">
+            <span>Customer Impact</span>
+            <span>Financial Impact</span>
+            <span>Operational Impact</span>
+            <span>Security Impact</span>
+            <span>Regulatory Impact</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="rta-small">RTA<br /><span>RIGHT TO ACT</span></div>
+          <div class="arrow">↓</div>
+          <div class="decision-row">
+            <span class="allow">ALLOW</span>
+            <span class="info">REQUEST INFO</span>
+            <span class="escalate">ESCALATE</span>
+            <span class="deny">DENY</span>
+          </div>
         </div>
-        <div class="protocol-copy"><h3>Every action creates consequences.</h3><p>Those consequences should be evaluated before execution.</p><p class="short-explain">RTA evaluates the potential consequences of an action using existing information, organizational context, and expected impact before execution.</p></div>
+
+        <div class="protocol-copy">
+          <h3>Every action creates consequences.</h3>
+          <p>Those consequences should be evaluated before execution.</p>
+          <p class="short-explain">
+            RTA evaluates the potential consequences of an action using existing information,
+            organizational context, and expected impact before execution.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="runtime" class="section">
-      <div class="section-title"><span>03</span><h2>Runtime Console</h2></div>
+      <div class="section-title">
+        <span>03</span>
+        <h2>Runtime Console</h2>
+      </div>
+
       <div class="console-frame">
-        <div class="console-top"><div><span class="label">Action</span><strong>Change Supplier Bank Account</strong></div><div><span class="label">Outcome</span><strong class="escalate-text">ESCALATE</strong></div><div><span class="label">Execution Status</span><strong>Payment Held</strong></div></div>
-        <div class="console-body"><div class="metric"><span>Legitimacy Gap</span><strong>4</strong></div><div class="metric"><span>Affected Conditions</span><strong>3</strong></div><div class="metric"><span>Missing Information</span><strong>2</strong></div></div>
-        <div class="console-notes"><div><h3>Dynamic Evaluation</h3><p>RTA evaluates actions within their operational context rather than using fixed rules.</p></div><div><h3>Local & Global Context</h3><p>The same action may be legitimate in one environment and require review in another.</p></div><div><h3>Adaptive Calibration</h3><p>The protocol adjusts to organizational conditions while preserving decision consistency.</p></div></div>
+        <div class="console-top">
+          <div>
+            <span class="label">Action</span>
+            <strong>Change Supplier Bank Account</strong>
+          </div>
+          <div>
+            <span class="label">Outcome</span>
+            <strong class="escalate-text">ESCALATE</strong>
+          </div>
+          <div>
+            <span class="label">Execution Status</span>
+            <strong>Payment Held</strong>
+          </div>
+        </div>
+
+        <div class="console-body">
+          <div class="metric"><span>Legitimacy Gap</span><strong>4</strong></div>
+          <div class="metric"><span>Affected Conditions</span><strong>3</strong></div>
+          <div class="metric"><span>Missing Information</span><strong>2</strong></div>
+        </div>
+
+        <div class="console-notes">
+          <div><h3>Dynamic Evaluation</h3><p>RTA evaluates actions within their operational context rather than using fixed rules.</p></div>
+          <div><h3>Local & Global Context</h3><p>The same action may be legitimate in one environment and require review in another.</p></div>
+          <div><h3>Adaptive Calibration</h3><p>The protocol adjusts to organizational conditions while preserving decision consistency.</p></div>
+        </div>
       </div>
     </section>
 
     <section id="case-study" class="section">
-      <div class="section-title"><span>04</span><h2>Case Study</h2></div>
+      <div class="section-title">
+        <span>04</span>
+        <h2>Case Study</h2>
+      </div>
+
       <div class="case-study-layout">
-        <div class="story"><h3>International Business Email Fraud</h3><h2>$415,017.58 Supplier Payment</h2><p>Shivganga Drillers, an industrial company based in Indore, India, was preparing a payment of <strong>$415,017.58</strong> to Innovex International Inc, a vendor in Houston.</p><p>Cybercriminals spoofed the vendor’s email, changed the banking details, and redirected the payment to a fraudulent JP Morgan Bank account in the United States.</p><p>The fraud was discovered after another spoofed email claimed the payment had been rejected and requested a new transfer. The company verified directly with the vendor and alerted the cyber cell.</p><p>The funds were eventually recovered after emergency coordination between Indian cyber authorities, IC3, JP Morgan Bank and Bank of India.</p></div>
-        <div class="evaluation"><h3>What Existing Systems Saw</h3><ul><li>Legitimate Business Communication</li><li>Known Supplier Relationship</li><li>Approved Internal Process</li><li>Authorized Payment Request</li><li>No Technical Access Violation</li></ul><h3>What RTA Evaluates</h3><div class="mini-flow"><span>Requested Action</span><span>Existing Information</span><span>Organizational Context</span><span>Potential Consequences</span><span>Expected Impact</span><strong>RIGHT TO ACT</strong></div><div class="outcome-box"><span>Outcome</span><strong>ESCALATE</strong><p>The payment was never sent to the fraudulent account.</p></div></div>
+        <div class="story">
+          <h3>International Business Email Fraud</h3>
+          <h2>$415,017.58 Supplier Payment</h2>
+          <p>Shivganga Drillers, an industrial company based in Indore, India, was preparing a payment of <strong>$415,017.58</strong> to Innovex International Inc, a vendor in Houston.</p>
+          <p>Cybercriminals spoofed the vendor’s email, changed the banking details, and redirected the payment to a fraudulent JP Morgan Bank account in the United States.</p>
+          <p>The fraud was discovered after another spoofed email claimed the payment had been rejected and requested a new transfer. The company verified directly with the vendor and alerted the cyber cell.</p>
+          <p>The funds were eventually recovered after emergency coordination between Indian cyber authorities, IC3, JP Morgan Bank and Bank of India.</p>
+        </div>
+
+        <div class="evaluation">
+          <h3>What Existing Systems Saw</h3>
+          <ul>
+            <li>Legitimate Business Communication</li>
+            <li>Known Supplier Relationship</li>
+            <li>Approved Internal Process</li>
+            <li>Authorized Payment Request</li>
+            <li>No Technical Access Violation</li>
+          </ul>
+
+          <h3>What RTA Evaluates</h3>
+          <div class="mini-flow">
+            <span>Requested Action</span>
+            <span>Existing Information</span>
+            <span>Organizational Context</span>
+            <span>Potential Consequences</span>
+            <span>Expected Impact</span>
+            <strong>RIGHT TO ACT</strong>
+          </div>
+
+          <div class="outcome-box">
+            <span>Outcome</span>
+            <strong>ESCALATE</strong>
+            <p>The payment was never sent to the fraudulent account.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="research" class="section">
-      <div class="section-title"><span>05</span><h2>Research</h2></div>
-      <div class="research-card"><h3>Right To Act</h3><p>A Pre-Execution Non-Compensatory Decision Protocol for AI Systems</p><div class="research-columns"><div><h4>Primary Publication</h4><p><a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">arXiv Abstract</a><br><a href="https://arxiv.org/pdf/2604.24153" target="_blank" rel="noopener noreferrer">Read the Paper</a></p></div><div><h4>Indexed & Referenced By</h4><p><a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener noreferrer">NASA ADS</a> · <a href="https://www.semanticscholar.org/" target="_blank" rel="noopener noreferrer">Semantic Scholar</a> · <a href="https://www.connectedpapers.com/" target="_blank" rel="noopener noreferrer">Connected Papers</a> · <a href="https://scite.ai/" target="_blank" rel="noopener noreferrer">scite.ai</a> · <a href="https://www.catalyzex.com/" target="_blank" rel="noopener noreferrer">CatalyzeX</a> · arXivLens · RichlyAI · Provide.ai · Robotics & AI Research Directories</p></div><div><h4>Research Areas</h4><p>AI Safety · Autonomous Systems · Agent Governance · Decision Authorization · Pre-Execution Validation</p></div></div><div class="questions"><p>Can a system evaluate an action before executing it?</p><p>Can non-action be a valid outcome?</p><p>Can actions be evaluated through consequences before execution?</p></div></div>
+      <div class="section-title">
+        <span>05</span>
+        <h2>Research</h2>
+      </div>
+
+      <div class="research-card">
+        <h3>Right To Act</h3>
+        <p>A Pre-Execution Non-Compensatory Decision Protocol for AI Systems</p>
+
+        <div class="research-columns">
+          <div>
+            <h4>Primary Publication</h4>
+            <p>
+              <a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">arXiv Abstract</a><br />
+              <a href="https://arxiv.org/pdf/2604.24153" target="_blank" rel="noopener noreferrer">Read the Paper</a>
+            </p>
+          </div>
+          <div>
+            <h4>Indexed & Referenced By</h4>
+            <p>
+              <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener noreferrer">NASA ADS</a> ·
+              <a href="https://www.semanticscholar.org/" target="_blank" rel="noopener noreferrer">Semantic Scholar</a> ·
+              <a href="https://www.connectedpapers.com/" target="_blank" rel="noopener noreferrer">Connected Papers</a> ·
+              <a href="https://scite.ai/" target="_blank" rel="noopener noreferrer">scite.ai</a> ·
+              <a href="https://www.catalyzex.com/" target="_blank" rel="noopener noreferrer">CatalyzeX</a> ·
+              arXivLens · RichlyAI · Provide.ai · Robotics & AI Research Directories
+            </p>
+          </div>
+          <div>
+            <h4>Research Areas</h4>
+            <p>AI Safety · Autonomous Systems · Agent Governance · Decision Authorization · Pre-Execution Validation</p>
+          </div>
+        </div>
+
+        <div class="questions">
+          <p>Can a system evaluate an action before executing it?</p>
+          <p>Can non-action be a valid outcome?</p>
+          <p>Can actions be evaluated through consequences before execution?</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-title"><span>06</span><h2>Contact</h2></div>
-      <div class="contact-card"><h3>Request a Demo</h3><p>Pilot Program · Research Collaboration · Partnership Opportunities</p>
-        <form id="contact-form" action="https://formsubmit.co/ajax/lavi.gadi@gmail.com" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="New DECIMAG Website Contact"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
-          <label><span>Name</span><input type="text" name="name" placeholder="Name" required minlength="2"></label>
-          <label><span>Organization</span><input type="text" name="organization" placeholder="Organization" required minlength="2"></label>
-          <label><span>Email</span><input type="email" name="email" placeholder="Email" required></label>
-          <label><span>Message</span><textarea name="message" placeholder="Message" required minlength="10"></textarea></label>
-          <button type="submit">Send Message</button><p id="form-status" class="form-status" aria-live="polite"></p>
+      <div class="section-title">
+        <span>06</span>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-card">
+        <h3>Request a Demo</h3>
+        <p>Pilot Program · Research Collaboration · Partnership Opportunities</p>
+
+        <form id="contact-form" action="https://formsubmit.co/ajax/lavi.gadi@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New DECIMAG Website Contact" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Name" required minlength="2" />
+          </label>
+
+          <label>
+            <span>Organization</span>
+            <input type="text" name="organization" placeholder="Organization" required minlength="2" />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="Email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" placeholder="Message" required minlength="10"></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+          <p class="direct-email">Or email directly: <a href="mailto:lavi.gadi@gmail.com">lavi.gadi@gmail.com</a></p>
         </form>
       </div>
     </section>
   </main>
-  <footer><span>DECIMAG</span><span>RTA — RIGHT TO ACT</span></footer>
+
+  <footer>
+    <span>DECIMAG</span>
+    <span>RTA — RIGHT TO ACT</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

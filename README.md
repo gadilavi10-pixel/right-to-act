@@ -1,8 +1,16 @@
-# DECIMAG Website V2 Functional
+# DECIMAG Website V2.1 Functional
 
-Upload these files to GitHub Pages:
+Upload these files to GitHub:
 - index.html
 - style.css
 - script.js
 
-Important: FormSubmit requires first-time email confirmation. After uploading, submit one test message and confirm the activation email sent to lavi.gadi@gmail.com.
+Fixes:
+- The Problem cards now include RTA Evaluation arrows.
+- Contact form validates fields and email.
+- Contact form sends to lavi.gadi@gmail.com through FormSubmit.
+- Form displays success/error messages.
+- Research section includes arXiv links.
+
+Important:
+FormSubmit requires first-time activation. After uploading, send one test message and approve the confirmation email sent to lavi.gadi@gmail.com.
