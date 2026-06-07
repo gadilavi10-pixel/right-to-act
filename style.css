@@ -1001,3 +1001,54 @@ footer {
     font-size: 31px;
   }
 }
+
+
+
+/* Mobile Polish v2.6 */
+section {
+  scroll-margin-top: 96px;
+}
+
+@media (max-width: 760px) {
+  section {
+    scroll-margin-top: 92px;
+  }
+
+  .contact-section {
+    padding-bottom: 180px;
+  }
+
+  .contact-card {
+    margin-bottom: 80px;
+  }
+
+  .site-nav.open {
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    padding-bottom: 8px;
+  }
+
+  .case-card .result,
+  .rta-evaluation,
+  .decision-row span,
+  .flow-box,
+  .impact-list span,
+  .mini-flow span,
+  .mini-flow strong {
+    line-height: 1.35;
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+}
+
+@media (max-width: 420px) {
+  section {
+    scroll-margin-top: 88px;
+  }
+
+  .contact-section {
+    padding-bottom: 210px;
+  }
+}
