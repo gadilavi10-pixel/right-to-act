@@ -274,3 +274,22 @@ footer {
   .impact-list, .decision-row { grid-template-columns: 1fr; }
   .section { padding: 72px 20px; }
 }
+
+
+
+.research-link-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.research-note {
+  margin: 0 0 26px;
+  padding: 18px 22px;
+  border: 1px solid rgba(59, 130, 246, 0.24);
+  border-radius: 18px;
+  background: rgba(59, 130, 246, 0.08);
+  color: var(--muted);
+  line-height: 1.6;
+}

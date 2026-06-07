@@ -14,3 +14,7 @@ Fixes:
 
 Important:
 FormSubmit requires first-time activation. After uploading, send one test message and approve the confirmation email sent to lavi.gadi@gmail.com.
+
+
+V2.2 update:
+- Added exact Research page links for Semantic Scholar, Harvard ADS / NASA ADS, Connected Papers and CatalyzeX.
