@@ -1052,3 +1052,266 @@ section {
     padding-bottom: 210px;
   }
 }
+
+
+
+/* Mobile Story Mode v2.7 */
+.mobile-hero-story,
+.mobile-problem-story,
+.mobile-protocol-story,
+.mobile-runtime-story,
+.mobile-research-story {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .desktop-hero-story {
+    display: none;
+  }
+
+  .mobile-hero-story,
+  .mobile-problem-story,
+  .mobile-protocol-story,
+  .mobile-runtime-story,
+  .mobile-research-story {
+    display: block;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 42px 18px 54px;
+  }
+
+  .mobile-hero-story {
+    width: 100%;
+    text-align: left;
+  }
+
+  .mobile-stat {
+    font-size: 58px;
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    line-height: 0.95;
+  }
+
+  .mobile-hero-story p {
+    margin: 8px 0 24px;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .mobile-hero-story h1 {
+    margin: 0 0 22px;
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .mobile-pill-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 0 0 22px;
+  }
+
+  .mobile-pill-row span {
+    padding: 13px 15px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .mobile-hero-story h2 {
+    margin: 0 0 22px;
+    font-size: 28px;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+
+  .mobile-rta {
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--blue);
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+  }
+
+  .mobile-rta-sub {
+    margin-top: 8px;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    font-weight: 800;
+  }
+
+  .mobile-problem-story {
+    display: grid;
+    gap: 14px;
+  }
+
+  .card-grid {
+    display: none;
+  }
+
+  .story-step {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(30, 45, 70, 0.92);
+  }
+
+  .step-label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .story-step p {
+    margin: 8px 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .story-step strong {
+    display: block;
+    margin: 12px 0;
+    color: var(--blue);
+    font-size: 15px;
+    letter-spacing: 0.04em;
+  }
+
+  .safe-outcome {
+    color: var(--text) !important;
+    font-weight: 900;
+  }
+
+  .protocol-layout {
+    display: none;
+  }
+
+  .mobile-protocol-story {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgba(30, 45, 70, 0.92);
+  }
+
+  .mobile-protocol-story h3 {
+    margin: 0 0 18px;
+    font-size: 28px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .mobile-flow-line {
+    display: grid;
+    gap: 9px;
+  }
+
+  .mobile-flow-line span,
+  .mobile-flow-line strong,
+  .mobile-flow-line em {
+    display: block;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+    font-style: normal;
+  }
+
+  .mobile-flow-line strong {
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .mobile-flow-line em {
+    color: var(--text);
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .console-frame {
+    display: none;
+  }
+
+  .mobile-runtime-story {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mobile-console-card {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(30, 45, 70, 0.92);
+  }
+
+  .mobile-console-card span {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .mobile-console-card strong {
+    font-size: 20px;
+  }
+
+  .mobile-runtime-story p {
+    margin: 6px 0 0;
+    padding: 18px;
+    border: 1px solid rgba(59, 130, 246, 0.24);
+    border-radius: 18px;
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .research-card {
+    display: none;
+  }
+
+  .mobile-research-story {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgba(30, 45, 70, 0.92);
+  }
+
+  .mobile-research-story h3 {
+    margin: 0 0 8px;
+    font-size: 32px;
+  }
+
+  .mobile-research-story p {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .mobile-research-story a {
+    display: block;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 761px) {
+  .desktop-hero-story {
+    display: block;
+  }
+}
