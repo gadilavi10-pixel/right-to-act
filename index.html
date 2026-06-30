@@ -1,401 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XS21YDDSMJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XS21YDDSMJ');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DECIMAG | RTA Protocol</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DECIMAG — Right-to-Act Before Execution</title>
+  <meta name="description" content="DECIMAG evaluates whether important digital actions should happen before they execute" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-top"><div class="brand">DECIMAG</div><button class="mobile-menu-toggle" type="button" aria-label="Open navigation">Menu</button></div>
-    <nav class="site-nav">
-      <a href="#home">Home</a>
-      <a href="#problem">The Problem</a>
-      <a href="#protocol">The Protocol</a>
-      <a href="#runtime">Runtime Console</a>
-      <a href="#case-study">Case Study</a>
-      <a href="#research">Research</a>
-      <a href="#contact" class="nav-cta">Request Demo</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="DECIMAG home">DECIMAG</a>
+  <button class="menu-button" type="button" aria-label="Open navigation">Menu</button>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="#incidents">Incidents</a>
+    <a href="#pattern">Pattern</a>
+    <a href="#gap">Gap</a>
+    <a href="#decimag">DECIMAG</a>
+    <a href="ask.html">Ask DECIMAG</a>
+    <a class="nav-cta" href="#demo">Request a Pilot</a>
+  </nav>
+</header>
 
-  <main>
-    <section id="home" class="section hero">
-      <div class="mobile-hero-story">
-          <div class="mobile-stat">$10T</div>
-          <p>Estimated Annual Cybercrime Damage</p>
-          <h1>AI Agents Can Now Execute Real Actions</h1>
-          <div class="mobile-pill-row">
-            <span>Identity</span>
-            <span>Access</span>
-            <span>Policy</span>
-          </div>
-          <h2>But Not The Action Itself</h2>
-          <div class="mobile-rta">RTA</div>
-          <div class="mobile-rta-sub">RIGHT TO ACT</div>
-        </div>
-        <div class="hero-stack desktop-hero-story">
-        <div class="hero-number">$10T</div>
-        <p>Estimated Annual Cybercrime Damage</p>
-        <div class="arrow">↓</div>
-        <h1>AI Agents Can Now Execute Real Actions</h1>
-        <div class="arrow">↓</div>
-        <div class="verify-block">
-          <span>Existing Systems Verify</span>
-          <strong>Identity</strong>
-          <strong>Access</strong>
-          <strong>Policy</strong>
-        </div>
-        <div class="arrow">↓</div>
-        <h2>But Not The Action Itself</h2>
-        <div class="arrow">↓</div>
-        <div class="rta-mark">RTA</div>
-        <div class="rta-subtitle">RIGHT TO ACT</div>
-      </div>
-    </section>
+<main>
+  <section class="hero chapter" id="home">
+    <div class="world-glow" aria-hidden="true"></div>
+    <div class="chapter-inner hero-inner">
+      <p class="eyebrow">Digital execution changed</p>
+      <h1>
+        <span>Most digital actions are harmless</span>
+        <span>Some create expensive mistakes</span>
+        <span>A few change everything</span>
+      </h1>
+      <a class="scroll-cue" href="#incidents">See the pattern <span>↓</span></a>
+    </div>
+  </section>
 
-    <section id="problem" class="section">
-      <div class="section-title">
-        <span>01</span>
-        <h2>The Problem</h2>
+  <section class="incidents chapter" id="incidents">
+    <div class="chapter-inner wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Curated incident feed</p>
+          <h2>It happens every day</h2>
+        </div>
+        <p class="section-note">Real-world events where digital actions created real consequences</p>
       </div>
 
-      <div class="mobile-problem-story">
-          <div class="story-step">
-            <span class="step-label">Bank Fraud</span>
-            <p>Verification passed</p>
-            <strong>RTA Evaluation</strong>
-            <p class="safe-outcome">The payment was never sent</p>
+      <div class="incident-wall" aria-label="Real-world incident examples">
+        <article class="incident-card large">
+          <div class="incident-meta">
+            <span class="source">N12 / Times of Israel</span>
+            <span class="time">26 Jun 2026 · reported</span>
           </div>
-          <div class="story-step">
-            <span class="step-label">Data Export</span>
-            <p>The request was approved</p>
-            <strong>RTA Evaluation</strong>
-            <p class="safe-outcome">Customer data remained untouched</p>
-          </div>
-          <div class="story-step">
-            <span class="step-label">AI Agents</span>
-            <p>Permissions matched</p>
-            <strong>RTA Evaluation</strong>
-            <p class="safe-outcome">The database remained intact</p>
-          </div>
-          <div class="story-step">
-            <span class="step-label">Money Transfer</span>
-            <p>The transaction appeared legitimate</p>
-            <strong>RTA Evaluation</strong>
-            <p class="safe-outcome">The money was never transferred</p>
-          </div>
-        </div>
-
-      <div class="card-grid">
-        <article class="case-card">
-          <h3>Bank Fraud</h3>
-          <p>A supplier changed the beneficiary bank account</p>
-          <p>The account passed all verification checks</p>
-          <p class="rta-step">↓</p>
-          <p class="rta-evaluation">RTA Evaluation</p>
-          <p class="rta-step">↓</p>
-          <p class="result">The payment was never sent</p>
+          <h3>Public AI tools blocked on hospital networks</h3>
+          <p>External AI value became clear before safe organizational execution was solved</p>
+          <div class="incident-action">Action: tool access blocked</div>
         </article>
 
-        <article class="case-card">
-          <h3>Data Export</h3>
-          <p>An employee requested to export customer records</p>
-          <p>The request was approved</p>
-          <p class="rta-step">↓</p>
-          <p class="rta-evaluation">RTA Evaluation</p>
-          <p class="rta-step">↓</p>
-          <p class="result">Customer data remained untouched</p>
+        <article class="incident-card">
+          <div class="incident-meta">
+            <span class="source">SEC</span>
+            <span class="time">1 Aug 2012 · market open</span>
+          </div>
+          <h3>Knight Capital trading system activated faulty orders</h3>
+          <p>Hundreds of millions in losses followed a production execution failure</p>
+          <div class="incident-action">Action: trades executed</div>
         </article>
 
-        <article class="case-card">
-          <h3>AI Agents</h3>
-          <p>An AI agent attempted to delete a production database</p>
-          <p>The action matched its assigned permissions</p>
-          <p class="rta-step">↓</p>
-          <p class="rta-evaluation">RTA Evaluation</p>
-          <p class="rta-step">↓</p>
-          <p class="result">The database remained intact</p>
+        <article class="incident-card">
+          <div class="incident-meta">
+            <span class="source">Hawaii EMA / FCC</span>
+            <span class="time">13 Jan 2018 · 08:08 HST</span>
+          </div>
+          <h3>False missile alert sent statewide</h3>
+          <p>A single alert action reached phones, radio and television</p>
+          <div class="incident-action">Action: alert broadcast</div>
         </article>
 
-        <article class="case-card">
-          <h3>Money Transfer</h3>
-          <p>A customer approved a payment request</p>
-          <p>The transaction appeared legitimate</p>
-          <p class="rta-step">↓</p>
-          <p class="rta-evaluation">RTA Evaluation</p>
-          <p class="rta-step">↓</p>
-          <p class="result">The money was never transferred</p>
+        <article class="incident-card large">
+          <div class="incident-meta">
+            <span class="source">UniSuper / Google Cloud</span>
+            <span class="time">May 2024</span>
+          </div>
+          <h3>Private cloud subscription deleted after misconfiguration</h3>
+          <p>Account deletion caused prolonged service disruption for a major pension fund</p>
+          <div class="incident-action">Action: cloud resource deleted</div>
+        </article>
+
+        <article class="incident-card">
+          <div class="incident-meta">
+            <span class="source">AHA / OFR</span>
+            <span class="time">Feb 2024</span>
+          </div>
+          <h3>Change Healthcare outage disrupted care operations</h3>
+          <p>Claims, eligibility and payment workflows were interrupted at national scale</p>
+          <div class="incident-action">Action: critical systems unavailable</div>
+        </article>
+
+        <article class="incident-card">
+          <div class="incident-meta">
+            <span class="source">MGM / SEC</span>
+            <span class="time">Sep 2023</span>
+          </div>
+          <h3>MGM shut down systems after cybersecurity issue</h3>
+          <p>Digital operations across hotel and casino systems were disrupted</p>
+          <div class="incident-action">Action: systems shut down</div>
         </article>
       </div>
-    </section>
 
-    <section id="protocol" class="section">
-      <div class="section-title">
-        <span>02</span>
-        <h2>The Protocol</h2>
+      <a class="next-cue" href="#pattern">What do these have in common? <span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="pattern chapter light" id="pattern">
+    <div class="chapter-inner centered">
+      <p class="eyebrow blue">The common pattern</p>
+      <h2>These incidents look different<br><span>They are not</span></h2>
+      <div class="action-cloud">
+        <span>Money moved</span>
+        <span>Trades executed</span>
+        <span>Alert broadcast</span>
+        <span>Cloud deleted</span>
+        <span>Access blocked</span>
+        <span>System stopped</span>
+      </div>
+      <a class="next-cue dark" href="#gap">Continue <span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="gap chapter" id="gap">
+    <div class="chapter-inner centered">
+      <p class="eyebrow">The gap in today's stack</p>
+      <h2>We verify almost everything before execution</h2>
+
+      <div class="verification-grid">
+        <div><b>✓</b><span>Identity</span></div>
+        <div><b>✓</b><span>Device</span></div>
+        <div><b>✓</b><span>Access</span></div>
+        <div><b>✓</b><span>Policy</span></div>
+        <div><b>✓</b><span>Monitoring</span></div>
       </div>
 
-      <div class="mobile-protocol-story">
-          <h3>Every action creates consequences</h3>
-          <div class="mobile-flow-line">
-            <span>Requested Action</span>
-            <span>Consequence Evaluation</span>
-            <span>Existing Information</span>
-            <span>Organizational Context</span>
-            <span>Expected Impact</span>
-            <strong>RTA</strong>
-            <em>ALLOW · REQUEST INFO · ESCALATE · DENY</em>
-          </div>
-        </div>
+      <h3>But nothing verifies the action itself</h3>
+      <a class="next-cue" href="#decimag">Meet DECIMAG <span>↓</span></a>
+    </div>
+  </section>
 
-      <div class="protocol-layout">
-        <div class="protocol-flow">
-          <div class="flow-box">Requested Action</div>
-          <div class="arrow">↓</div>
-          <div class="flow-box highlight">Consequence Evaluation</div>
-          <div class="impact-list">
-            <span>Customer Impact</span>
-            <span>Financial Impact</span>
-            <span>Operational Impact</span>
-            <span>Security Impact</span>
-            <span>Regulatory Impact</span>
-          </div>
-          <div class="arrow">↓</div>
-          <div class="rta-small">RTA<br /><span>RIGHT TO ACT</span></div>
-          <div class="arrow">↓</div>
-          <div class="decision-row">
-            <span class="allow">ALLOW</span>
-            <span class="info">REQUEST INFO</span>
-            <span class="escalate">ESCALATE</span>
-            <span class="deny">DENY</span>
-          </div>
-        </div>
+  <section class="decimag chapter" id="decimag">
+    <div class="chapter-inner centered">
+      <p class="eyebrow">Introducing DECIMAG</p>
+      <h2>DECIMAG verifies something different</h2>
+      <p class="big-subtitle">Not who can act<br><span>Whether the action should happen now</span></p>
 
-        <div class="protocol-copy">
-          <h3>Every action creates consequences</h3>
-          <p>Those consequences should be evaluated before execution</p>
-          <p class="short-explain">
-            RTA evaluates the potential consequences of an action using existing information,
-            organizational context, and expected impact before execution
-          </p>
+      <div class="decision-flow">
+        <div class="flow-box">
+          <small>Existing systems</small>
+          <strong>Identity<br>Access<br>Policy</strong>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box active">
+          <small>DECIMAG</small>
+          <strong>Right-to-Act<br>Decision</strong>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box">
+          <small>Only then</small>
+          <strong>Execution</strong>
         </div>
       </div>
-    </section>
 
-    <section id="runtime" class="section">
-      <div class="section-title">
-        <span>03</span>
-        <h2>Runtime Console</h2>
+      <div class="principles-row">
+        <div><b>Real-time</b><span>Designed for runtime decisions</span></div>
+        <div><b>Context-aware</b><span>Current conditions, verified context</span></div>
+        <div><b>Explainable</b><span>Every decision needs a reason</span></div>
+        <div><b>Auditable</b><span>Every decision can be reviewed</span></div>
       </div>
+    </div>
+  </section>
 
-      <div class="mobile-runtime-story">
-          <div class="mobile-console-card">
-            <span>Action</span>
-            <strong>Change Supplier Bank Account</strong>
-          </div>
-          <div class="mobile-console-card">
-            <span>Outcome</span>
-            <strong class="escalate-text">ESCALATE</strong>
-          </div>
-          <div class="mobile-console-card">
-            <span>Execution Status</span>
-            <strong>Payment Held</strong>
-          </div>
-          <p>RTA adjusts evaluation according to local and global organizational context</p>
-        </div>
+  <section class="demo chapter" id="demo">
+    <div class="chapter-inner centered">
+      <p class="eyebrow">Next step</p>
+      <h2>See how DECIMAG evaluates an important action before execution</h2>
+      <p class="demo-sub">Start with one workflow, one action, one pilot</p>
+      <a class="primary-button" href="mailto:lavi.gadi@gmail.com?subject=DECIMAG%20Demo%20Request">Request a Demo</a>
+    </div>
+  </section>
+</main>
 
-      <div class="console-frame">
-        <div class="console-top">
-          <div>
-            <span class="label">Action</span>
-            <strong>Change Supplier Bank Account</strong>
-          </div>
-          <div>
-            <span class="label">Outcome</span>
-            <strong class="escalate-text">ESCALATE</strong>
-          </div>
-          <div>
-            <span class="label">Execution Status</span>
-            <strong>Payment Held</strong>
-          </div>
-        </div>
+<footer class="site-footer">
+  <span>DECIMAG</span>
+  <span>Right-to-Act before execution</span>
+</footer>
 
-        <div class="console-body">
-          <div class="metric"><span>Legitimacy Gap</span><strong>4</strong></div>
-          <div class="metric"><span>Affected Conditions</span><strong>3</strong></div>
-          <div class="metric"><span>Missing Information</span><strong>2</strong></div>
-        </div>
-
-        <div class="console-notes">
-          <div><h3>Dynamic Evaluation</h3><p>RTA evaluates actions within their operational context rather than using fixed rules</p></div>
-          <div><h3>Local & Global Context</h3><p>The same action may be legitimate in one environment and require review in another</p></div>
-          <div><h3>Adaptive Calibration</h3><p>The protocol adjusts to organizational conditions while preserving decision consistency</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="case-study" class="section">
-      <div class="section-title">
-        <span>04</span>
-        <h2>Case Study</h2>
-      </div>
-
-      <div class="case-study-layout">
-        <div class="story">
-          <h3>International Business Email Fraud</h3>
-          <h2>$415,017.58 Supplier Payment</h2>
-          <p>Shivganga Drillers, an industrial company based in Indore, India, was preparing a payment of <strong>$415,017.58</strong> to Innovex International Inc, a vendor in Houston.</p>
-          <p>Cybercriminals spoofed the vendor’s email, changed the banking details, and redirected the payment to a fraudulent JP Morgan Bank account in the United States.</p>
-          <p>The fraud was discovered after another spoofed email claimed the payment had been rejected and requested a new transfer. The company verified directly with the vendor and alerted the cyber cell.</p>
-          <p>The funds were eventually recovered after emergency coordination between Indian cyber authorities, IC3, JP Morgan Bank and Bank of India.</p>
-        </div>
-
-        <div class="evaluation">
-          <h3>What Existing Systems Saw</h3>
-          <ul>
-            <li>Legitimate Business Communication</li>
-            <li>Known Supplier Relationship</li>
-            <li>Approved Internal Process</li>
-            <li>Authorized Payment Request</li>
-            <li>No Technical Access Violation</li>
-          </ul>
-
-          <h3>What RTA Evaluates</h3>
-          <div class="mini-flow">
-            <span>Requested Action</span>
-            <span>Existing Information</span>
-            <span>Organizational Context</span>
-            <span>Potential Consequences</span>
-            <span>Expected Impact</span>
-            <strong>RIGHT TO ACT</strong>
-          </div>
-
-          <div class="outcome-box">
-            <span>Outcome</span>
-            <strong>ESCALATE</strong>
-            <p>The payment was never sent to the fraudulent account</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="section">
-      <div class="section-title">
-        <span>05</span>
-        <h2>Research</h2>
-      </div>
-
-      <div class="mobile-research-story">
-          <h3>Right To Act</h3>
-          <p>A Pre-Execution Non-Compensatory Decision Protocol for AI Systems</p>
-          <a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">arXiv Abstract</a>
-          <a href="https://arxiv.org/pdf/2604.24153" target="_blank" rel="noopener noreferrer">arXiv PDF</a>
-          <a href="https://www.semanticscholar.org/paper/Right-to-Act%3A-A-Pre-Execution-Non-Compensatory-for-Lavi/3abd9d1c06c73c536cb3f73e9d3ddd48b594a195" target="_blank" rel="noopener noreferrer">Semantic Scholar</a>
-          <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260424153L/abstract" target="_blank" rel="noopener noreferrer">Harvard ADS / NASA ADS</a>
-        </div>
-
-      <div class="research-card">
-        <h3>Right To Act</h3>
-        <p>A Pre-Execution Non-Compensatory Decision Protocol for AI Systems</p>
-
-        <div class="research-columns research-links">
-          <div>
-            <h4>Primary Publication</h4>
-            <ul class="research-link-list">
-              <li><a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">arXiv Abstract</a></li>
-              <li><a href="https://arxiv.org/pdf/2604.24153" target="_blank" rel="noopener noreferrer">arXiv PDF</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Indexed & Referenced By</h4>
-            <ul class="research-link-list">
-              <li><a href="https://www.semanticscholar.org/paper/Right-to-Act%3A-A-Pre-Execution-Non-Compensatory-for-Lavi/3abd9d1c06c73c536cb3f73e9d3ddd48b594a195" target="_blank" rel="noopener noreferrer">Semantic Scholar</a></li>
-              <li><a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260424153L/abstract" target="_blank" rel="noopener noreferrer">Harvard ADS / NASA ADS</a></li>
-              <li><a href="https://www.connectedpapers.com/search?q=Right-to-Act:%20A%20Pre-Execution%20Non-Compensatory%20Decision%20Protocol%20for%20AI%20Systems&p=1" target="_blank" rel="noopener noreferrer">Connected Papers</a></li>
-              <li><a href="https://www.catalyzex.com/s/Right-to-Act:%20A%20Pre-Execution%20Non-Compensatory%20Decision%20Protocol%20for%20AI%20Systems" target="_blank" rel="noopener noreferrer">CatalyzeX</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Research Areas</h4>
-            <p>AI Safety · Autonomous Systems · Agent Governance · Decision Authorization · Pre-Execution Validation</p>
-          </div>
-        </div>
-
-        <p class="research-note">
-          Indexed by academic discovery and research platforms including Harvard ADS / NASA ADS,
-          Semantic Scholar, Connected Papers and CatalyzeX.
-        </p>
-
-        <div class="questions">
-          <p>Can a system evaluate an action before executing it?</p>
-          <p>Can non-action be a valid outcome?</p>
-          <p>Can actions be evaluated through consequences before execution?</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-title">
-        <span>06</span>
-        <h2>Contact</h2>
-      </div>
-
-      <div class="contact-card">
-        <h3>Request a Demo</h3>
-        <p>Pilot Program · Research Collaboration · Partnership Opportunities</p>
-
-        <form id="contact-form" action="https://formsubmit.co/ajax/lavi.gadi@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New DECIMAG Website Contact" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
-
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Name" required minlength="2" />
-          </label>
-
-          <label>
-            <span>Organization</span>
-            <input type="text" name="organization" placeholder="Organization" required minlength="2" />
-          </label>
-
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="Email" required />
-          </label>
-
-          <label>
-            <span>Message</span>
-            <textarea name="message" placeholder="Message" required minlength="10"></textarea>
-          </label>
-
-          <button type="submit">Send Message</button>
-          <p id="form-status" class="form-status" aria-live="polite"></p>
-          <p class="direct-email">Or email directly: <a href="mailto:lavi.gadi@gmail.com">lavi.gadi@gmail.com</a></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <span>DECIMAG</span>
-    <span>RTA — RIGHT TO ACT</span>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

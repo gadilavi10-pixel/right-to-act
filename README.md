@@ -1,13 +1,22 @@
-# DECIMAG Website V2.8 Anchor + Mobile Density
+# DECIMAG Site v2 — Sprint 1
 
-Upload:
+Files:
 - index.html
-- style.css
-- script.js
+- ask.html
+- css/styles.css
+- js/main.js
 
-Fixes:
-- Desktop menu links land closer to section headers
-- Mobile sections are denser and less oversized
-- Mobile Research and Contact are more compact
-- Contact form fits better on phone screens
-- Desktop structure preserved
+Sprint 1 scope:
+- Hero
+- Curated incidents
+- Common pattern
+- Missing execution layer
+- DECIMAG positioning
+- Demo CTA
+- Ask DECIMAG page structure
+
+Next sprint:
+- Replace curated incidents with final approved source list
+- Expand Ask DECIMAG content
+- Add research section
+- Add animations only after layout is approved

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask DECIMAG</title>
+  <meta name="description" content="Questions and answers about DECIMAG architecture, AI agents, enterprise deployment and pilots" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="DECIMAG home">DECIMAG</a>
+  <button class="menu-button" type="button" aria-label="Open navigation">Menu</button>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html#incidents">Incidents</a>
+    <a href="index.html#pattern">Pattern</a>
+    <a href="index.html#decimag">DECIMAG</a>
+    <a href="ask.html">Ask DECIMAG</a>
+    <a class="nav-cta" href="index.html#demo">Request a Pilot</a>
+  </nav>
+</header>
+
+<main>
+  <section class="ask-hero chapter">
+    <div class="chapter-inner">
+      <p class="eyebrow">Knowledge center</p>
+      <h1>Ask DECIMAG</h1>
+      <p class="ask-intro">Browse by topic. Short answers first. Deeper architecture only when needed.</p>
+      <a class="scroll-cue" href="#topics">Browse topics <span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="ask-topics chapter" id="topics">
+    <div class="chapter-inner wide">
+      <div class="topic-grid">
+        <a class="topic-card" href="#getting-started">
+          <span>01</span>
+          <strong>Getting Started</strong>
+          <em>What DECIMAG is and where it fits</em>
+        </a>
+        <a class="topic-card" href="#architecture">
+          <span>02</span>
+          <strong>Architecture</strong>
+          <em>Runtime, policy, memory and deployment</em>
+        </a>
+        <a class="topic-card" href="#ai-agents">
+          <span>03</span>
+          <strong>AI Agents</strong>
+          <em>LLMs, prompts, MCP and tool execution</em>
+        </a>
+        <a class="topic-card" href="#enterprise">
+          <span>04</span>
+          <strong>Enterprise</strong>
+          <em>Latency, audit, rollout and failure modes</em>
+        </a>
+        <a class="topic-card" href="#industries">
+          <span>05</span>
+          <strong>Industries</strong>
+          <em>Banking, healthcare, government and more</em>
+        </a>
+        <a class="topic-card" href="#pilot">
+          <span>06</span>
+          <strong>Pilot</strong>
+          <em>Start small with one important action</em>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="qa-section" id="getting-started">
+    <div class="chapter-inner narrow">
+      <p class="eyebrow">Getting Started</p>
+      <h2>Start here</h2>
+
+      <details open>
+        <summary>What is DECIMAG?</summary>
+        <p>DECIMAG is a runtime architecture that adds a decision layer before execution. It does not replace existing security systems. It evaluates whether the action itself should happen in the current context.</p>
+      </details>
+
+      <details>
+        <summary>Is this a cybersecurity product?</summary>
+        <p>It is highly relevant to cybersecurity, but it is not a classic cybersecurity product. It is a decision layer that can use information collected by security systems.</p>
+      </details>
+
+      <details>
+        <summary>Where does DECIMAG sit?</summary>
+        <p>Between authorization and execution. After existing systems finish their checks, and before the action actually happens.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="qa-section" id="architecture">
+    <div class="chapter-inner narrow">
+      <p class="eyebrow">Architecture</p>
+      <h2>Architecture questions</h2>
+
+      <details>
+        <summary>Why isn't IAM enough?</summary>
+        <p>IAM helps prove who the actor is and what they can access. DECIMAG asks a different question: should this action happen under the current conditions?</p>
+      </details>
+
+      <details>
+        <summary>Why not just use more rules?</summary>
+        <p>Rules are useful for defined cases. DECIMAG is designed for a broader runtime evaluation where policy is one input, not the entire picture.</p>
+      </details>
+
+      <details>
+        <summary>Will it slow the system?</summary>
+        <p>The heavy work is prepared offline. At runtime, the system evaluates against an existing model, with the goal of adding minimal latency. Performance must be validated in pilots.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="qa-section" id="ai-agents">
+    <div class="chapter-inner narrow">
+      <p class="eyebrow">AI Agents</p>
+      <h2>AI agent questions</h2>
+
+      <details>
+        <summary>Why not let the LLM decide?</summary>
+        <p>Because the model can help reason, analyze or suggest. The execution decision should be handled by a runtime layer that is controllable, explainable and auditable.</p>
+      </details>
+
+      <details>
+        <summary>Why not better prompting?</summary>
+        <p>Prompts influence model behavior. They do not create an independent decision layer before execution.</p>
+      </details>
+
+      <details>
+        <summary>Is DECIMAG an AI agent?</summary>
+        <p>No. DECIMAG does not initiate actions or define business goals. It evaluates whether a requested action should be executed.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="qa-section" id="enterprise">
+    <div class="chapter-inner narrow">
+      <p class="eyebrow">Enterprise</p>
+      <h2>Enterprise questions</h2>
+
+      <details>
+        <summary>Can we start small?</summary>
+        <p>Yes. A pilot can start with one workflow, one system or even one specific high-impact action.</p>
+      </details>
+
+      <details>
+        <summary>Can decisions be audited?</summary>
+        <p>Yes. The goal is to store each decision with the version of reality that produced it, so the decision can be reviewed later.</p>
+      </details>
+
+      <details>
+        <summary>What if DECIMAG is unavailable?</summary>
+        <p>Fail-open or fail-closed behavior depends on the organization's risk model and the action type. Sensitive actions may require fail-closed behavior.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="qa-section" id="pilot">
+    <div class="chapter-inner centered">
+      <p class="eyebrow">Pilot</p>
+      <h2>Start with one important action</h2>
+      <p class="demo-sub">Choose a workflow where the cost of a wrong execution is high enough to matter</p>
+      <a class="primary-button" href="mailto:lavi.gadi@gmail.com?subject=DECIMAG%20Pilot%20Request">Request a Demo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>DECIMAG</span>
+  <span>Ask DECIMAG</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
