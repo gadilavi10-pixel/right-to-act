@@ -1,22 +1,10 @@
-# DECIMAG Site v2 — Sprint 1
+# DECIMAG Site v3 — News Wall Sprint
 
-Files:
+Flat GitHub Pages structure:
 - index.html
 - ask.html
-- css/styles.css
-- js/main.js
+- styles.css
+- main.js
+- CNAME
 
-Sprint 1 scope:
-- Hero
-- Curated incidents
-- Common pattern
-- Missing execution layer
-- DECIMAG positioning
-- Demo CTA
-- Ask DECIMAG page structure
-
-Next sprint:
-- Replace curated incidents with final approved source list
-- Expand Ask DECIMAG content
-- Add research section
-- Add animations only after layout is approved
+This version uses a static "recent digital incidents" wall with 2026 examples.
