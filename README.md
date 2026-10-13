@@ -1,10 +1,19 @@
-# DECIMAG Site v3 — News Wall Sprint
+# DECIMAG Website — Review Build
 
-Flat GitHub Pages structure:
-- index.html
-- ask.html
-- styles.css
-- main.js
-- CNAME
+Static, dependency-free website prepared for evaluation before any production deployment.
 
-This version uses a static "recent digital incidents" wall with 2026 examples.
+## Local preview
+
+Run `python3 -m http.server 8080`, then open `http://localhost:8080`.
+
+## Structure
+
+- `index.html` — narrative homepage
+- `product.html` — product and console
+- `technology.html` — Structure Acquisition, Organizational Reality and Right-to-Act
+- `enterprise.html` — integration, deployment context and security positioning
+- `research.html` — RTA, BAR, research status and IP
+- `explore.html` — film, console demo, interactive demo and FAQ
+- `ask.html` — compatibility redirect to the FAQ
+
+The console presentation is explicitly labeled as a product demonstration using fixture data. No Runtime API, authentication, delivery service or backend behavior is implemented by this site.
