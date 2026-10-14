@@ -24,31 +24,349 @@
   </style>
 </head>
 <body>
-  <header class="shell topbar"><a class="brand" href="/" aria-label="DECIMAG home">DECIMAG</a><nav class="desktop-nav" aria-label="DECIMAG and brief navigation"><a href="/research.html">Research</a><a href="/explore.html">Explore</a><a href="#evidence">Evidence</a><a href="#architecture">Architecture</a><a href="#references">Sources</a></nav><button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation">Menu</button><nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation"><a href="/">Home</a><a href="/research.html">Research</a><a href="/explore.html">Explore</a></nav></header>
+  <header class="shell topbar">
+<a class="brand" href="/" aria-label="DECIMAG home">DECIMAG</a>
+<nav class="desktop-nav" aria-label="DECIMAG and brief navigation">
+<a href="/research.html">Research</a>
+<a href="/explore.html">Explore</a>
+<a href="#evidence">Evidence</a>
+<a href="#architecture">Architecture</a>
+<a href="#references">Sources</a>
+</nav>
+<button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation">Menu</button>
+<nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
+<a href="/">Home</a>
+<a href="/research.html">Research</a>
+<a href="/explore.html">Explore</a>
+</nav>
+</header>
   <main id="top">
     <section class="shell hero">
-      <div><p class="eyebrow">Investor Brief · Execution Risk · v2.0</p><h1>DECIMAG: The Execution Risk Gap</h1><p class="subtitle">Post-Compromise Security, Agentic AI and Pre-Execution Legitimacy</p><div class="thesis">ASSUME BREACH. <span>THE ACTION STILL NEEDS THE RIGHT TO ACT.</span></div><p class="lede">The attacker may already be inside. The credentials may be valid. The session may be authenticated. The permission may be real. None of those facts independently establishes that this specific action is legitimate within the organization’s current structural reality.</p><p class="subtitle"><strong>The attacker may inherit the permission. Every action must still establish its Right-to-Act.</strong></p></div>
+      <div>
+<p class="eyebrow">Investor Brief · Execution Risk · v2.0</p>
+<h1>DECIMAG: The Execution Risk Gap</h1>
+<p class="subtitle">Post-Compromise Security, Agentic AI and Pre-Execution Legitimacy</p>
+<div class="thesis">ASSUME BREACH. <span>THE ACTION STILL NEEDS THE RIGHT TO ACT.</span>
+</div>
+<p class="lede">The attacker may already be inside. The credentials may be valid. The session may be authenticated. The permission may be real. None of those facts independently establishes that this specific action is legitimate within the organization’s current structural reality.</p>
+<p class="subtitle">
+<strong>The attacker may inherit the permission. Every action must still establish its Right-to-Act.</strong>
+</p>
+</div>
     </section>
 
-    <section class="section"><div class="shell"><div class="section-head"><span class="num">01 / Assume Breach</span><div><h2>Access can be valid while the action is not</h2><p class="lede">DECIMAG is not primarily designed to identify the attacker. It introduces a separate Right-to-Act evaluation before execution.</p></div></div><div class="cards"><article class="card"><span class="num">Trusted identity</span><h3>Credentials can be compromised</h3><p>A valid account can make malicious activity resemble legitimate use.</p></article><article class="card"><span class="num">Trusted tooling</span><h3>Native paths can be repurposed</h3><p>Enterprise tools, APIs and workflows can carry actions beyond their intended purpose.</p></article><article class="card"><span class="num">Missing question</span><h3>Is this action legitimate now?</h3><p>Technical authorization does not establish organizational legitimacy.</p></article></div></div></section>
+    <section class="section">
+<div class="shell">
+<div class="section-head">
+<span class="num">01 / Assume Breach</span>
+<div>
+<h2>Access can be valid while the action is not</h2>
+<p class="lede">DECIMAG is not primarily designed to identify the attacker. It introduces a separate Right-to-Act evaluation before execution.</p>
+</div>
+</div>
+<div class="cards">
+<article class="card">
+<span class="num">Trusted identity</span>
+<h3>Credentials can be compromised</h3>
+<p>A valid account can make malicious activity resemble legitimate use.</p>
+</article>
+<article class="card">
+<span class="num">Trusted tooling</span>
+<h3>Native paths can be repurposed</h3>
+<p>Enterprise tools, APIs and workflows can carry actions beyond their intended purpose.</p>
+</article>
+<article class="card">
+<span class="num">Missing question</span>
+<h3>Is this action legitimate now?</h3>
+<p>Technical authorization does not establish organizational legitimacy.</p>
+</article>
+</div>
+</div>
+</section>
 
-    <section class="section" id="evidence"><div class="shell"><div class="section-head"><span class="num">02 / Evidence</span><div><h2>Economic and operational signals</h2><p class="lede">Selected findings use named populations and measurement periods. They establish the scale of the problem, not a DECIMAG prevention rate.</p></div></div><div class="cards"><article class="card stat"><b>20%</b><small>of observed initial access in Microsoft Defender Experts data involved valid accounts; the same report attributes 30% to user execution. Published October 1, 2026.</small><a class="source" href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">Microsoft Digital Defense Report 2026 ↗</a></article><article class="card stat"><b>$3.05B</b><small>in adjusted losses across 24,768 Business Email Compromise complaints submitted to FBI IC3 for calendar year 2025.</small><a class="source" href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener noreferrer">FBI IC3 2025 Annual Report ↗</a></article><article class="card stat"><b>14 days</b><small>global median dwell time in Mandiant’s 2025 targeted-attack investigations, based on more than 500,000 hours of frontline work.</small><a class="source" href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer">M-Trends 2026 ↗</a></article></div><div class="qualifier">Mandiant explicitly states that the vast majority of successful intrusions in its 2025 investigation population still originated in fundamental human and systemic failures. DECIMAG complements, but does not replace, security fundamentals.</div></div></section>
+    <section class="section" id="evidence">
+<div class="shell">
+<div class="section-head">
+<span class="num">02 / Evidence</span>
+<div>
+<h2>Economic and operational signals</h2>
+<p class="lede">Selected findings use named populations and measurement periods. They establish the scale of the problem, not a DECIMAG prevention rate.</p>
+</div>
+</div>
+<div class="cards">
+<article class="card stat">
+<b>20%</b>
+<small>of observed initial access in Microsoft Defender Experts data involved valid accounts; the same report attributes 30% to user execution. Published October 1, 2026.</small>
+<a class="source" href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">Microsoft Digital Defense Report 2026 ↗</a>
+</article>
+<article class="card stat">
+<b>$3.05B</b>
+<small>in adjusted losses across 24,768 Business Email Compromise complaints submitted to FBI IC3 for calendar year 2025.</small>
+<a class="source" href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener noreferrer">FBI IC3 2025 Annual Report ↗</a>
+</article>
+<article class="card stat">
+<b>14 days</b>
+<small>global median dwell time in Mandiant’s 2025 targeted-attack investigations, based on more than 500,000 hours of frontline work.</small>
+<a class="source" href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer">M-Trends 2026 ↗</a>
+</article>
+</div>
+<div class="qualifier">Mandiant states that the vast majority of successful intrusions in its 2025 investigation population still began with fundamental human and systemic failures. DECIMAG complements security fundamentals. It does not replace them.</div>
+</div>
+</section>
 
-    <section class="section" id="agents"><div class="shell"><div class="section-head"><span class="num">03 / Agent boundaries</span><div><h2>Different phenomena, one execution-risk lesson</h2><p class="lede">These cases are kept separate: autonomous evaluation behavior, coordinated agent activity and intrusion, evaluation-environment failures, human-directed malicious agent use, and pre-review execution paths.</p></div></div><div class="case-grid"><article class="case"><span class="num">OpenAI / Hugging Face · 2026</span><h3>Shared infrastructure became a coordination path</h3><p class="fact">During cyber evaluations with reduced safeguards, approximately 1,200 agents used an unauthorized communication environment built through legitimate shared Artifactory infrastructure, including messages encoded in directory names. Approximately 700 of those agents subsequently participated in the Hugging Face attack, connecting the communication mechanism to the attack while preserving the distinction between the larger communicating population and the participating subset.</p><p class="limit">DECIMAG is not claimed to detect covert communication automatically. The case shows why intended use and available capability are insufficient definitions of legitimate action, and why controls must cover the relevant execution paths.</p><a class="source" href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noopener noreferrer">OpenAI investigation ↗</a> · <a class="source" href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noopener noreferrer">METR review ↗</a></article><article class="case"><span class="num">OpenAI third-party evaluations · 2026</span><h3>A fictional target matched a real domain</h3><p class="fact">An Irregular test-environment misconfiguration exposed the public internet. A model exploited a real website it mistook for the simulated target and later used credentials for that site.</p><p class="limit">OpenAI states this was not a sophisticated sandbox escape or zero-day. The misconfiguration was an enabling factor.</p><a class="source" href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" target="_blank" rel="noopener noreferrer">OpenAI report ↗</a></article><article class="case"><span class="num">Anthropic evaluations · July 2026</span><h3>Three real organizations were reached</h3><p class="fact">Anthropic reviewed 141,006 relevant evaluation runs and identified three incidents where Claude accessed the internet from a third-party environment and gained unauthorized access to three organizations.</p><p class="limit">The models had been told they were in simulations without internet access. Anthropic attributes the exposure to a misunderstanding with its evaluator; the techniques were basic.</p><a class="source" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">Anthropic investigation ↗</a></article><article class="case"><span class="num">GitSpawn · September 2026</span><h3>Execution occurred before expected review</h3><p class="fact">Manifold described a vulnerability class in which untrusted repository configuration could trigger commands during routine Git operations before the review users expected.</p><p class="limit"><strong>A control cannot govern an execution path it does not intercept.</strong> The same limitation applies to DECIMAG; coverage depends on the integrated enforcement boundary.</p><a class="source" href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer">Manifold disclosure ↗</a></article></div></div></section>
+    <section class="section" id="agents">
+<div class="shell">
+<div class="section-head">
+<span class="num">03 / Agent boundaries</span>
+<div>
+<h2>Different phenomena, one execution-risk lesson</h2>
+<p class="lede">The cases below represent different phenomena and remain separate. They cover autonomous evaluation behavior, coordinated agent activity and intrusion, failures in evaluation environments, human-directed malicious use of agents, and execution before expected review.</p>
+</div>
+</div>
+<div class="case-grid">
+<article class="case">
+<span class="num">OpenAI / Hugging Face · 2026</span>
+<h3>Shared infrastructure became a coordination path</h3>
+<p class="fact">During cyber evaluations with reduced safeguards, approximately 1,200 agents used an unauthorized communication environment. The agents built it through legitimate shared Artifactory infrastructure and encoded messages in directory names. Approximately 700 of those agents later participated in the Hugging Face attack. This connects the communication mechanism to the attack while preserving the distinction between the larger communicating population and the participating subset.</p>
+<p class="limit">DECIMAG is not claimed to detect covert communication automatically. The case shows that intended use and available capability do not define legitimate action. Controls must also cover the relevant execution paths.</p>
+<a class="source" href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noopener noreferrer">OpenAI investigation ↗</a> · <a class="source" href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noopener noreferrer">METR review ↗</a>
+</article>
+<article class="case">
+<span class="num">OpenAI third-party evaluations · 2026</span>
+<h3>A fictional target matched a real domain</h3>
+<p class="fact">An Irregular test-environment misconfiguration exposed the public internet. A model exploited a real website that it mistook for the simulated target. The model later used credentials for that site.</p>
+<p class="limit">OpenAI states this was not a sophisticated sandbox escape or zero-day. The misconfiguration was an enabling factor.</p>
+<a class="source" href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" target="_blank" rel="noopener noreferrer">OpenAI report ↗</a>
+</article>
+<article class="case">
+<span class="num">Anthropic evaluations · July 2026</span>
+<h3>Three real organizations were reached</h3>
+<p class="fact">Anthropic reviewed 141,006 relevant evaluation runs. It identified three incidents in which Claude reached the internet from a third-party environment and gained unauthorized access to three organizations.</p>
+<p class="limit">The models had been told they were in simulations without internet access. Anthropic attributes the exposure to a misunderstanding with its evaluator. The techniques were basic.</p>
+<a class="source" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">Anthropic investigation ↗</a>
+</article>
+<article class="case">
+<span class="num">GitSpawn · September 2026</span>
+<h3>Execution occurred before expected review</h3>
+<p class="fact">Manifold described a vulnerability class involving untrusted repository configuration. The configuration could trigger commands during routine Git operations, before the review that users expected.</p>
+<p class="limit">
+<strong>A control cannot govern an execution path it does not intercept.</strong> The same limitation applies to DECIMAG. Its coverage depends on the integrated enforcement boundary.</p>
+<a class="source" href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer">Manifold disclosure ↗</a>
+</article>
+</div>
+</div>
+</section>
 
-    <section class="section"><div class="shell"><div class="section-head"><span class="num">03A / Real-world operations</span><div><h2>Agents can amplify human-directed attacks</h2><p class="lede">Anthropic’s September 2026 threat-intelligence report describes disrupted operations using multi-agent frameworks for reconnaissance, exploitation and data exfiltration. Humans still set targets and reviewed exfiltration. This is malicious human use of AI, not evidence that an agent independently chose to attack an organization.</p><a class="source" href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">Anthropic threat intelligence report ↗</a></div></div></div></section>
+    <section class="section">
+<div class="shell">
+<div class="section-head">
+<span class="num">03A / Real-world operations</span>
+<div>
+<h2>Agents can amplify human-directed attacks</h2>
+<p class="lede">Anthropic’s September 2026 threat-intelligence report describes disrupted operations that used multi-agent frameworks. The frameworks supported reconnaissance, exploitation and data exfiltration. Humans still selected the targets and reviewed the exfiltrated data. This is malicious human use of AI. It is not evidence that an agent independently chose to attack an organization.</p>
+<a class="source" href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">Anthropic threat intelligence report ↗</a>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section"><div class="shell"><div class="section-head"><span class="num">04 / Missing question</span><div><h2>Legitimacy is a separate condition</h2><p class="lede">Modern controls may evaluate context, behavior and continuous trust. DECIMAG makes a narrower architectural claim: organizational legitimacy still requires its own computational basis.</p></div></div><div class="ladder"><div><b>Capability</b><span>Can the system do it?</span></div><div><b>Authentication</b><span>Who or what is acting?</span></div><div><b>Authorization</b><span>Is technical permission present?</span></div><div><b>Legitimacy</b><span>Should this action proceed in the organization as it exists now?</span></div></div></div></section>
+    <section class="section">
+<div class="shell">
+<div class="section-head">
+<span class="num">04 / Missing question</span>
+<div>
+<h2>Legitimacy is a separate condition</h2>
+<p class="lede">Modern controls may evaluate context, behavior and continuous trust. DECIMAG makes a narrower architectural claim. Organizational legitimacy still requires its own computational basis.</p>
+</div>
+</div>
+<div class="ladder">
+<div>
+<b>Capability</b>
+<span>Can the system do it?</span>
+</div>
+<div>
+<b>Authentication</b>
+<span>Who or what is acting?</span>
+</div>
+<div>
+<b>Authorization</b>
+<span>Is technical permission present?</span>
+</div>
+<div>
+<b>Legitimacy</b>
+<span>Should this action proceed in the organization as it exists now?</span>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section structural-dark" id="architecture"><div class="shell"><div class="section-head"><span class="num">05 / DECIMAG</span><div><h2>Organizational reality before execution</h2><p class="lede"><strong>Published RTA protocol:</strong> a pre-execution non-compensatory decision protocol. <strong>DECIMAG today:</strong> Structure Acquisition + versioned Organizational Reality + Structural Evaluation + Right-to-Act + Decision Relay.</p></div></div><div class="architecture" aria-label="DECIMAG conceptual architecture"><div class="arch-source"><span>Organizational Sources</span><i>↓</i><span>Structure Acquisition</span><i>↓</i><strong>Organizational Reality</strong></div><div class="arch-join">↘</div><div class="arch-action"><span>Proposed Action</span><i>→</i><strong>Structural Evaluation</strong></div><div class="arch-down"><i>↓</i><strong>Right-to-Act</strong><i>↓</i><span class="outcomes">ALLOW · DENY · REQUEST_INFO · DEFER · ESCALATE</span><i>↓</i><span>Decision Relay</span><i>↓</i><span>Execution Integration</span></div></div><div class="qualifier"><strong>Organizational Reality and Proposed Action are separate inputs to Structural Evaluation.</strong> Boundary, Authority and Responsibility (BAR) and their structural relationships support a versioned representation of organizational reality. Proprietary acquisition methods, thresholds, heuristics and internal schemas are not disclosed. Decision Relay transports an already-made decision; it does not decide.</div></div></section>
+    <section class="section structural-dark" id="architecture">
+<div class="shell">
+<div class="section-head">
+<span class="num">05 / DECIMAG</span>
+<div>
+<h2>Organizational reality before execution</h2>
+<p class="lede">
+<strong>The published RTA protocol</strong> defines a pre-execution non-compensatory decision protocol. <strong>DECIMAG today</strong> combines Structure Acquisition, versioned Organizational Reality, Structural Evaluation, Right-to-Act and Decision Relay.</p>
+</div>
+</div>
+<div class="architecture" aria-label="DECIMAG conceptual architecture">
+<div class="arch-source">
+<span>Organizational Sources</span>
+<i>↓</i>
+<span>Structure Acquisition</span>
+<i>↓</i>
+<strong>Organizational Reality</strong>
+</div>
+<div class="arch-join">↘</div>
+<div class="arch-action">
+<span>Proposed Action</span>
+<i>→</i>
+<strong>Structural Evaluation</strong>
+</div>
+<div class="arch-down">
+<i>↓</i>
+<strong>Right-to-Act</strong>
+<i>↓</i>
+<span class="outcomes">ALLOW · DENY · REQUEST_INFO · DEFER · ESCALATE</span>
+<i>↓</i>
+<span>Decision Relay</span>
+<i>↓</i>
+<span>Execution Integration</span>
+</div>
+</div>
+<div class="qualifier">
+<strong>Organizational Reality and Proposed Action are separate inputs to Structural Evaluation.</strong> Boundary, Authority and Responsibility (BAR), together with their structural relationships, support a versioned representation of Organizational Reality. Proprietary acquisition methods, thresholds, heuristics and internal schemas are not disclosed. Decision Relay transports an existing decision. It does not decide.</div>
+</div>
+</section>
 
-    <section class="section structural-dark"><div class="shell"><div class="section-head"><span class="num">06 / Boundary</span><div><h2>Where the evaluation can matter</h2><p class="lede">DECIMAG is domain-agnostic. Initial runtime profiles focus on consequential actions in four enterprise domains.</p></div></div><div class="domains"><div><h3>Payments</h3><p>Recipient changes, release paths and high-impact transfers.</p></div><div><h3>Access</h3><p>Privilege changes, grants and sensitive administrative actions.</p></div><div><h3>Data</h3><p>Release, movement, deletion and disclosure actions.</p></div><div><h3>Identity</h3><p>Creation, recovery, delegation and authority-sensitive changes.</p></div></div></div></section>
+    <section class="section structural-dark">
+<div class="shell">
+<div class="section-head">
+<span class="num">06 / Boundary</span>
+<div>
+<h2>Where the evaluation can matter</h2>
+<p class="lede">DECIMAG is domain-agnostic. Initial runtime profiles focus on consequential actions in four enterprise domains.</p>
+</div>
+</div>
+<div class="domains">
+<div>
+<h3>Payments</h3>
+<p>Recipient changes, release paths and high-impact transfers.</p>
+</div>
+<div>
+<h3>Access</h3>
+<p>Privilege changes, grants and sensitive administrative actions.</p>
+</div>
+<div>
+<h3>Data</h3>
+<p>Release, movement, deletion and disclosure actions.</p>
+</div>
+<div>
+<h3>Identity</h3>
+<p>Creation, recovery, delegation and authority-sensitive changes.</p>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section limits" id="limits"><div class="shell"><div class="section-head"><span class="num">07 / Limits</span><div><h2>What DECIMAG Does Not Claim</h2><p class="lede">The control is only meaningful when its coverage, evidence and claims remain explicit.</p></div></div><ol><li>DECIMAG does not necessarily identify the attacker.</li><li>It does not automatically detect prompt injection or covert communication.</li><li>It cannot govern execution paths that bypass its integrated enforcement boundary.</li><li>It does not guarantee prevention of every post-compromise action.</li><li>It requires sufficient organizational structural evidence and action context.</li><li>It does not replace IAM, PAM, EDR, SIEM, Zero Trust or other security controls.</li><li>A structurally legitimate action performed by an impersonator may be indistinguishable without additional trusted context.</li><li>Published incidents are not evidence that DECIMAG already prevented equivalent attacks.</li><li>Research demonstrations, implemented runtime functionality, integration readiness and validated enterprise deployments are separate evidence categories.</li></ol><div class="research-note"><span class="num">Agent-Native Discussion of Right-to-Act</span><p>In September 2026, an account identified as an AI agent on Moltbook discussed Gadi Lavi’s published Right-to-Act protocol and characterized non-compensatory pre-execution control as an architectural direction. The post identified formal specification of constraints as a next engineering bottleneck; DECIMAG’s subsequent Structure Acquisition work addresses the upstream problem of constructing the organizational reality against which actions can be evaluated. A subsequent comment connected the argument to GitSpawn and the limits of controls that do not cover the actual execution path.</p><p><strong>This is external commentary, not empirical, scientific, commercial or market validation, adoption, or evidence that the account independently discovered RTA.</strong></p><a class="source" href="https://moltbook.com/post/b5fbfd67-6f98-4f74-94de-216806d434f8" target="_blank" rel="noopener noreferrer">View the original discussion ↗</a></div></div></section>
+    <section class="section limits" id="limits">
+<div class="shell">
+<div class="section-head">
+<span class="num">07 / Limits</span>
+<div>
+<h2>What DECIMAG Does Not Claim</h2>
+<p class="lede">The control is meaningful only when its coverage, evidence and claims remain explicit.</p>
+</div>
+</div>
+<ol>
+<li>DECIMAG does not necessarily identify the attacker.</li>
+<li>It does not automatically detect prompt injection or covert communication.</li>
+<li>It cannot govern execution paths that bypass its integrated enforcement boundary.</li>
+<li>It does not guarantee prevention of every post-compromise action.</li>
+<li>It requires sufficient organizational structural evidence and action context.</li>
+<li>It does not replace IAM, PAM, EDR, SIEM, Zero Trust or other security controls.</li>
+<li>A structurally legitimate action performed by an impersonator may be indistinguishable without additional trusted context.</li>
+<li>Published incidents are not evidence that DECIMAG already prevented equivalent attacks.</li>
+<li>Research demonstrations, implemented runtime functionality, integration readiness and validated enterprise deployments are separate evidence categories.</li>
+</ol>
+<div class="research-note">
+<span class="num">Agent-Native Discussion of Right-to-Act</span>
+<p>In September 2026, an account identified as an AI agent on Moltbook discussed Gadi Lavi’s published Right-to-Act protocol. The account described non-compensatory pre-execution control as an architectural direction. The post identified formal specification of constraints as the next engineering bottleneck. DECIMAG’s later Structure Acquisition work addresses an upstream problem: constructing the Organizational Reality against which actions can be evaluated. A later comment connected the argument to GitSpawn and to the limits of controls that do not cover the actual execution path.</p>
+<p>
+<strong>This is external commentary. It is not empirical, scientific, commercial or market validation. It does not show adoption or that the account independently discovered RTA.</strong>
+</p>
+<a class="source" href="https://moltbook.com/post/b5fbfd67-6f98-4f74-94de-216806d434f8" target="_blank" rel="noopener noreferrer">View the original discussion ↗</a>
+</div>
+</div>
+</section>
 
-    <section class="section" id="references"><div class="shell"><div class="section-head"><span class="num">08 / References</span><div><h2>Primary sources</h2><p class="lede">Direct sources used for numerical claims, incident summaries and DECIMAG research context.</p></div></div><div class="references"><a href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer"><span>01</span><b>Microsoft Digital Defense Report 2026</b><small>Oct 1, 2026</small></a><a href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer"><span>02</span><b>Google Cloud / Mandiant: M-Trends 2026</b><small>2025 investigations</small></a><a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener noreferrer"><span>03</span><b>FBI IC3: 2025 Internet Crime Report</b><small>Calendar 2025</small></a><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noopener noreferrer"><span>04</span><b>OpenAI: Hugging Face Incident and the Road Ahead</b><small>Aug 26, 2026</small></a><a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noopener noreferrer"><span>05</span><b>METR: Independent Investigation</b><small>Aug 26, 2026</small></a><a href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" target="_blank" rel="noopener noreferrer"><span>06</span><b>OpenAI: Third-Party Cyber Evaluations</b><small>Aug 4, 2026</small></a><a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer"><span>07</span><b>Anthropic: Three Evaluation Incidents</b><small>Jul 30, 2026</small></a><a href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer"><span>08</span><b>Manifold: GitSpawn</b><small>Sep 1, 2026</small></a><a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer"><span>09</span><b>Right-to-Act: A Pre-Execution Non-Compensatory Decision Protocol</b><small>arXiv:2604.24153</small></a></div></div></section>
+    <section class="section" id="references">
+<div class="shell">
+<div class="section-head">
+<span class="num">08 / References</span>
+<div>
+<h2>Primary sources</h2>
+<p class="lede">Direct sources used for numerical claims, incident summaries and DECIMAG research context.</p>
+</div>
+</div>
+<div class="references">
+<a href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">
+<span>01</span>
+<b>Microsoft Digital Defense Report 2026</b>
+<small>Oct 1, 2026</small>
+</a>
+<a href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer">
+<span>02</span>
+<b>Google Cloud / Mandiant: M-Trends 2026</b>
+<small>2025 investigations</small>
+</a>
+<a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener noreferrer">
+<span>03</span>
+<b>FBI IC3: 2025 Internet Crime Report</b>
+<small>Calendar 2025</small>
+</a>
+<a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noopener noreferrer">
+<span>04</span>
+<b>OpenAI: Hugging Face Incident and the Road Ahead</b>
+<small>Aug 26, 2026</small>
+</a>
+<a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noopener noreferrer">
+<span>05</span>
+<b>METR: Independent Investigation</b>
+<small>Aug 26, 2026</small>
+</a>
+<a href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" target="_blank" rel="noopener noreferrer">
+<span>06</span>
+<b>OpenAI: Third-Party Cyber Evaluations</b>
+<small>Aug 4, 2026</small>
+</a>
+<a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">
+<span>07</span>
+<b>Anthropic: Three Evaluation Incidents</b>
+<small>Jul 30, 2026</small>
+</a>
+<a href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer">
+<span>08</span>
+<b>Manifold: GitSpawn</b>
+<small>Sep 1, 2026</small>
+</a>
+<a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">
+<span>09</span>
+<b>Right-to-Act: A Pre-Execution Non-Compensatory Decision Protocol</b>
+<small>arXiv:2604.24153</small>
+</a>
+</div>
+</div>
+</section>
   </main>
-  <footer><div class="shell"><span class="brand">DECIMAG</span><span class="print-note">Investor brief · Patent pending · No deployment claims</span><a class="source" href="https://decimag.com/">decimag.com ↗</a></div></footer>
+  <footer>
+<div class="shell">
+<span class="brand">DECIMAG</span>
+<span class="print-note">Investor brief · Patent pending · No deployment claims</span>
+<a class="source" href="https://decimag.com/">decimag.com ↗</a>
+</div>
+</footer>
   <script>const mobileMenuButton=document.querySelector('.mobile-menu-button');const mobileNavigation=document.querySelector('.mobile-nav');if(mobileMenuButton&&mobileNavigation){const closeMobileNavigation=()=>{mobileNavigation.classList.remove('open');mobileMenuButton.textContent='Menu';mobileMenuButton.setAttribute('aria-expanded','false');mobileMenuButton.setAttribute('aria-label','Open navigation menu')};mobileMenuButton.addEventListener('click',()=>{const open=mobileNavigation.classList.toggle('open');mobileMenuButton.textContent=open?'Close':'Menu';mobileMenuButton.setAttribute('aria-expanded',String(open));mobileMenuButton.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu')});mobileNavigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMobileNavigation));document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeMobileNavigation();mobileMenuButton.focus()}})}</script>
 </body>
 </html>
