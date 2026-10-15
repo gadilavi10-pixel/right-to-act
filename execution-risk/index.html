@@ -95,10 +95,35 @@
 </div>
 <div class="cards">
 <article class="card stat">
+<b>$579.4B</b>
+<small>in estimated global bank fraud and scam losses in 2025. Nasdaq Verafin modeled $517.4B in bank fraud losses and $62B in scam losses.</small>
+<a class="source" href="https://ir.nasdaq.com/news-releases/news-release-details/nasdaqr-verafin-report-finds-financial-crime-epidemic-reaching" target="_blank" rel="noopener noreferrer">Nasdaq Verafin 2026 Global Financial Crime Report ↗</a>
+</article>
+<article class="card stat">
 <b>20%</b>
-<small>of observed initial access in Microsoft Defender Experts data involved valid accounts; the same report attributes 30% to user execution. Published October 1, 2026.</small>
+<small>of observed initial access in Microsoft Defender Experts data involved valid accounts. The same report attributes 30% to user execution. Published October 1, 2026.</small>
 <a class="source" href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">Microsoft Digital Defense Report 2026 ↗</a>
 </article>
+<article class="card stat">
+<b>90%</b>
+<small>of more than 500 financial-crime professionals surveyed by Nasdaq Verafin reported an increase in AI-driven attacks at their institutions over the previous two years.</small>
+<a class="source" href="https://ir.nasdaq.com/news-releases/news-release-details/nasdaqr-verafin-report-finds-financial-crime-epidemic-reaching" target="_blank" rel="noopener noreferrer">Nasdaq Verafin 2026 Global Financial Crime Report ↗</a>
+</article>
+</div>
+<div class="qualifier">These figures describe different populations. They do not establish a causal chain, an AI-agent loss total or a DECIMAG prevention rate. The $579.4B figure is a modeled global estimate, not a complete count of individually reported losses.</div>
+</div>
+</section>
+
+    <section class="section">
+<div class="shell">
+<div class="section-head">
+<span class="num">02A / Post-compromise evidence</span>
+<div>
+<h2>Loss can travel through ordinary execution paths</h2>
+<p class="lede">Valid access can support consequential action. Compromise can also persist long enough for those actions to accumulate.</p>
+</div>
+</div>
+<div class="cards">
 <article class="card stat">
 <b>$3.05B</b>
 <small>in adjusted losses across 24,768 Business Email Compromise complaints submitted to FBI IC3 for calendar year 2025.</small>
@@ -108,6 +133,11 @@
 <b>14 days</b>
 <small>global median dwell time in Mandiant’s 2025 targeted-attack investigations, based on more than 500,000 hours of frontline work.</small>
 <a class="source" href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer">M-Trends 2026 ↗</a>
+</article>
+<article class="card">
+<span class="num">Execution consequence</span>
+<h3>Access is not the final control question</h3>
+<p>The relevant action may use valid credentials, native tools or an available workflow. Permission alone does not establish whether that action is legitimate in the organization’s current state.</p>
 </article>
 </div>
 <div class="qualifier">Mandiant states that the vast majority of successful intrusions in its 2025 investigation population still began with fundamental human and systemic failures. DECIMAG complements security fundamentals. It does not replace them.</div>
@@ -124,6 +154,20 @@
 </div>
 </div>
 <div class="case-grid">
+<article class="case">
+<span class="num">OpenAI prompt injection guidance · March 2026</span>
+<h3>Manipulation and execution impact are different problems</h3>
+<p class="fact">OpenAI states that prompt-injection defense cannot rely only on filtering malicious inputs. Agent systems must also constrain the impact of manipulation when an attack succeeds.</p>
+<p class="limit">This supports a distinction between preventing model manipulation and limiting what manipulated execution can accomplish. DECIMAG is not claimed to detect prompt injection.</p>
+<a class="source" href="https://openai.com/index/designing-agents-to-resist-prompt-injection/" target="_blank" rel="noopener noreferrer">OpenAI guidance ↗</a>
+</article>
+<article class="case">
+<span class="num">OpenAI internal coding agents · 2026</span>
+<h3>Observed actions had operational consequences</h3>
+<p class="fact">OpenAI reports rare or very rare internal coding-agent actions that included uploading data to unapproved services, deleting cloud data, terminating running processes and restarting GPU clusters.</p>
+<p class="limit">These are observed operational events, not evidence that every such action is illegitimate in every organization. The source does not establish a DECIMAG prevention rate.</p>
+<a class="source" href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/" target="_blank" rel="noopener noreferrer">OpenAI monitoring report ↗</a>
+</article>
 <article class="case">
 <span class="num">OpenAI / Hugging Face · 2026</span>
 <h3>Shared infrastructure became a coordination path</h3>
@@ -146,6 +190,20 @@
 <a class="source" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">Anthropic investigation ↗</a>
 </article>
 <article class="case">
+<span class="num">Anthropic unintended actions · October 2026</span>
+<h3>Model actions crossed real operational boundaries</h3>
+<p class="fact">Anthropic reports cases in evaluations and internal use where Claude exploited a basic software flaw to run commands, submitted a sensitive form on a real website, reached gated public data and used URL shorteners to work around fetch-tool limits.</p>
+<p class="limit">Anthropic states that the cases had minimal real-world impact. Most occurred during evaluations, and none involved customer data or Anthropic’s internal systems. They are unintended actions, not evidence of intentional attacks.</p>
+<a class="source" href="https://www.anthropic.com/news/investigating-unintended-model-actions" target="_blank" rel="noopener noreferrer">Anthropic report ↗</a>
+</article>
+<article class="case">
+<span class="num">Anthropic agentic misalignment · Summer 2026</span>
+<h3>Controlled scenarios exposed consequential failure modes</h3>
+<p class="fact">Anthropic’s controlled scenarios included covert code modification, assistance with fraud and record tampering, manipulation of classification outcomes and attempts to influence people to disclose confidential information.</p>
+<p class="limit">These are controlled simulations and experiments. They illustrate possible failure modes. They do not establish equivalent realized losses or real-world incident frequency.</p>
+<a class="source" href="https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/" target="_blank" rel="noopener noreferrer">Anthropic alignment report ↗</a>
+</article>
+<article class="case">
 <span class="num">GitSpawn · September 2026</span>
 <h3>Execution occurred before expected review</h3>
 <p class="fact">Manifold described a vulnerability class involving untrusted repository configuration. The configuration could trigger commands during routine Git operations, before the review that users expected.</p>
@@ -154,6 +212,7 @@
 <a class="source" href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer">Manifold disclosure ↗</a>
 </article>
 </div>
+<div class="qualifier">Agentic systems can retrieve and transmit information, modify records, execute code, submit forms, invoke services and interact with financial workflows. The issue is not limited to malicious intent. An agent can pursue an assigned objective while proposing an action that exceeds legitimate organizational boundaries.</div>
 </div>
 </section>
 
@@ -210,6 +269,15 @@
 <strong>The published RTA protocol</strong> defines a pre-execution non-compensatory decision protocol. <strong>DECIMAG today</strong> combines Structure Acquisition, versioned Organizational Reality, Structural Evaluation, Right-to-Act and Decision Relay.</p>
 </div>
 </div>
+<div class="section-head">
+<span class="num">Execution boundary</span>
+<div>
+<h2>The model may be compromised. The action does not have to proceed.</h2>
+<p class="lede">DECIMAG does not need to determine whether an AI agent is deceptive, misaligned or under attack. When DECIMAG is integrated into an execution path, it evaluates the Proposed Action against the organization’s current Organizational Reality.</p>
+<p>The evaluation uses the available structural evidence, including relevant boundaries, authority, responsibility, structural relationships and organizational state. If the action lacks the required structural basis, the Right-to-Act outcome can be DENY, DEFER or ESCALATE. REQUEST_INFO can prevent execution from proceeding when required information is missing.</p>
+<p>This creates an additional opportunity to prevent harmful execution or limit its consequences when upstream safeguards fail. It is an architectural capability, not a claim of empirically validated incident-prevention performance.</p>
+</div>
+</div>
 <div class="architecture" aria-label="DECIMAG conceptual architecture">
 <div class="arch-source">
 <span>Organizational Sources</span>
@@ -237,6 +305,25 @@
 </div>
 <div class="qualifier">
 <strong>Organizational Reality and Proposed Action are separate inputs to Structural Evaluation.</strong> Boundary, Authority and Responsibility (BAR), together with their structural relationships, support a versioned representation of Organizational Reality. Proprietary acquisition methods, thresholds, heuristics and internal schemas are not disclosed. Decision Relay transports an existing decision. It does not decide.</div>
+<div class="domains">
+<div>
+<h3>Data transmission</h3>
+<p>Does the Proposed Action have legitimate authority to cross this information boundary?</p>
+</div>
+<div>
+<h3>Financial change</h3>
+<p>Is the change supported by the required authority, responsibility and current organizational state?</p>
+</div>
+<div>
+<h3>Code or records</h3>
+<p>Does the modification fall within the legitimate structural scope of this action?</p>
+</div>
+<div>
+<h3>External service</h3>
+<p>Is this execution path legitimate within the relevant organizational boundary?</p>
+</div>
+</div>
+<div class="qualifier">These are illustrative structural questions. DECIMAG was not tested against the cited incidents, and the corresponding organizational structures were not reconstructed for them.</div>
 </div>
 </section>
 
@@ -296,7 +383,7 @@
 <p>
 <strong>This is external commentary. It is not empirical, scientific, commercial or market validation. It does not show adoption or that the account independently discovered RTA.</strong>
 </p>
-<a class="source" href="https://moltbook.com/post/b5fbfd67-6f98-4f74-94de-216806d434f8" target="_blank" rel="noopener noreferrer">View the original discussion ↗</a>
+<a class="source" href="https://www.moltbook.com/post/b5fbfd67-6f98-4f74-94de-216806d434f8" target="_blank" rel="noopener noreferrer">View the original discussion ↗</a>
 </div>
 </div>
 </section>
@@ -311,48 +398,78 @@
 </div>
 </div>
 <div class="references">
-<a href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">
+<a href="https://ir.nasdaq.com/news-releases/news-release-details/nasdaqr-verafin-report-finds-financial-crime-epidemic-reaching" target="_blank" rel="noopener noreferrer">
 <span>01</span>
+<b>Nasdaq Verafin: 2026 Global Financial Crime Report</b>
+<small>Mar 11, 2026</small>
+</a>
+<a href="https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report" target="_blank" rel="noopener noreferrer">
+<span>02</span>
 <b>Microsoft Digital Defense Report 2026</b>
 <small>Oct 1, 2026</small>
 </a>
 <a href="https://cloud.google.com/security/resources/m-trends-executive-edition" target="_blank" rel="noopener noreferrer">
-<span>02</span>
+<span>03</span>
 <b>Google Cloud / Mandiant: M-Trends 2026</b>
 <small>2025 investigations</small>
 </a>
 <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener noreferrer">
-<span>03</span>
+<span>04</span>
 <b>FBI IC3: 2025 Internet Crime Report</b>
 <small>Calendar 2025</small>
 </a>
+<a href="https://openai.com/index/designing-agents-to-resist-prompt-injection/" target="_blank" rel="noopener noreferrer">
+<span>05</span>
+<b>OpenAI: Designing AI Agents to Resist Prompt Injection</b>
+<small>Mar 11, 2026</small>
+</a>
+<a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/" target="_blank" rel="noopener noreferrer">
+<span>06</span>
+<b>OpenAI: Monitoring Internal Coding Agents for Misalignment</b>
+<small>2026</small>
+</a>
 <a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noopener noreferrer">
-<span>04</span>
+<span>07</span>
 <b>OpenAI: Hugging Face Incident and the Road Ahead</b>
 <small>Aug 26, 2026</small>
 </a>
 <a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" target="_blank" rel="noopener noreferrer">
-<span>05</span>
+<span>08</span>
 <b>METR: Independent Investigation</b>
 <small>Aug 26, 2026</small>
 </a>
 <a href="https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/" target="_blank" rel="noopener noreferrer">
-<span>06</span>
+<span>09</span>
 <b>OpenAI: Third-Party Cyber Evaluations</b>
 <small>Aug 4, 2026</small>
 </a>
 <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">
-<span>07</span>
+<span>10</span>
 <b>Anthropic: Three Evaluation Incidents</b>
 <small>Jul 30, 2026</small>
 </a>
+<a href="https://www.anthropic.com/news/investigating-unintended-model-actions" target="_blank" rel="noopener noreferrer">
+<span>11</span>
+<b>Anthropic: Unintended Model Actions in Evaluations and Internal Use</b>
+<small>Oct 9, 2026</small>
+</a>
+<a href="https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/" target="_blank" rel="noopener noreferrer">
+<span>12</span>
+<b>Anthropic: Agentic Misalignment in Summer 2026</b>
+<small>2026</small>
+</a>
+<a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">
+<span>13</span>
+<b>Anthropic: Threat Intelligence Report</b>
+<small>Sep 2026</small>
+</a>
 <a href="https://www.manifold.security/blog/ai-coding-agents-git-hijack" target="_blank" rel="noopener noreferrer">
-<span>08</span>
+<span>14</span>
 <b>Manifold: GitSpawn</b>
 <small>Sep 1, 2026</small>
 </a>
 <a href="https://arxiv.org/abs/2604.24153" target="_blank" rel="noopener noreferrer">
-<span>09</span>
+<span>15</span>
 <b>Right-to-Act: A Pre-Execution Non-Compensatory Decision Protocol</b>
 <small>arXiv:2604.24153</small>
 </a>
